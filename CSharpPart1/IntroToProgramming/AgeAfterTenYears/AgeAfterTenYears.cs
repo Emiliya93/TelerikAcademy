@@ -1,14 +1,16 @@
 ﻿using System;
 
-/*Problem 15.* Age after 10 Years
+/*
+    Problem 15.* Age after 10 Years
 
-Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.*/
+    Write a program to read your birthday from the console and print how old you are now and how old you will be after 10 years.
+*/
 
 class AgeAfterTenYears
 {
     static void Main()
     {
-        //Collecting information about user birthday
+        // Collecting information about user birthday
         Console.WriteLine("Please enter your date of birth (for example: DD MM YYYY):");
 
         Console.WriteLine("Day: ");
@@ -21,9 +23,9 @@ class AgeAfterTenYears
         int yearOfBirth = int.Parse(Console.ReadLine());
 
         DateTime birthday = new DateTime(yearOfBirth, monthOfBirth, dayOfBirth);
-        //End of collecting information
+        // End of collecting information
 
-        //Checking how old the user is
+        // Checking how old the user is
         DateTime today = DateTime.Now;
         int years;
 
@@ -39,9 +41,9 @@ class AgeAfterTenYears
             Console.WriteLine("Your age now:");
             Console.WriteLine(years);
         }
-        //End of checking the user age
+        // End of checking the user age
 
-        //Age after 10 years
+        // Age after 10 years
         Console.WriteLine("Your age after 10 years:");
         Console.Write(years + 10);
         Console.WriteLine("years");

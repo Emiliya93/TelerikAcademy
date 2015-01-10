@@ -1,8 +1,10 @@
 ﻿using System;
 
-/*Problem 14.* Current Date and Time
+/*
+Problem 14.* Current Date and Time
 
-Create a console application that prints the current date and time. Find out how in Internet.*/
+Create a console application that prints the current date and time. Find out how in Internet.
+*/
 
 class CurrentDateAndTime
 {

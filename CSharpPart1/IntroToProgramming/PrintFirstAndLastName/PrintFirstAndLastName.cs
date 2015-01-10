@@ -1,8 +1,10 @@
 ﻿using System;
 
-/*Problem 7. Print First and Last Name
+/*
+    Problem 7. Print First and Last Name
 
-Create console application that prints your first and last name, each at a separate line.*/
+    Create console application that prints your first and last name, each at a separate line.
+*/
 
 class PrintFirstAndLastName
 {
