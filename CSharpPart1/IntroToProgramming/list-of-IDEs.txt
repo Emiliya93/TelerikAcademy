@@ -1,0 +1,35 @@
+Problem 12. Development Environments
+
+Perform a research (e.g. in Google or Wikipedia) and provide a short list with popular development environments (IDEs) like Visual Studio.
+Write in a text file called “list-of-IDEs.txt” at least five IDEs along with 2-3 sentences about each of them. Use English.
+
+1. Visual Studio
+
+Languages: Visual C++, VB.NET, C#, F# and others.
+Visual Studio is Microsoft's IDE. If you're building Silverlight apps or planning on working in a .NET shop (such as MySpace), you may want to spend some time with Visual Studio. Visual Basic has some support for non-Microsoft languages such as Python and Ruby, but you'll have to install those services yourself.
+
+2. NetBeans
+
+Languages: Java, JavaScript, PHP, Python, Ruby, C, C++ and more.
+NetBeans is neck-and-neck with Eclipse as the most-recommended IDE in this category. It's free and open-source, supports tons of languages with more plugins coming all the time, and is incredibly simple to install and use, even for a beginner.
+
+3.Eclipse
+
+Languages: C, C++, Python, Perl, PHP, Java, Ruby and more.
+This IDE is quite comprehensive and even similar to Netbeans in a variety of ways, including its use of Java and plugin architecture. However, Eclipse as an IDE comes in a wild variety of flavors, catering to various needs and objectives in software development workflows.
+
+4.Code::Blocks
+
+Languages: C, C++.
+Unlike the other products seen thus far, Code::Blocks, which is built on the wxWidgets framework, is exceptionally lightweight in size, yet still quite functional and feature-rich IDE. You can load up a number of under-the-hood compiler engines, ranging from GCC and LLVM, to Digital Mars and Open Watcom. Code::Blocks also takes advantage of multi-core compiling, allowing you to get the job done faster.
+
+5. Aptana
+
+Languages: HTML, CSS, JavaScript, AJAX and others via plugins.
+Aptana is a popular choice for web app development. Aptana Studio 2 can be used as a stand-alone IDE or can be plugged into Eclipse. Aptana comes with Firebug support built-in, and its developer community seems to release plugins for other languages as needed.
+
+6.Monodevelop
+
+Languages: C/C++, Visual Basic, C# and other .NET languages.
+Monodevelop is a good option if you're working in a .NET languages and don't want (or need) to fork over the $550 for Visual Studio. This free-as-in-beer IDE also allows you to port your apps to Linux while maintaining a single codebase.
+

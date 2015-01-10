@@ -1,0 +1,32 @@
+Problem 11. Programming Languages
+
+Perform a research (e.g. in Google or Wikipedia) and provide a short list with information about the most popular programming languages. How similar are they to C#? How do they differ from C#?
+Write in a text file called “programming-languages.txt” at least five languages along with 2-3 sentences about each of them. Use English.
+
+
+1.C language
+
+ C language was developed by Dennis Ritchie in 1972, at Bell labs. The legacy of C language stems from the fact that it is ancestor to many of the advanced programming languages such as C++, Java, C#, JavaScript, and Pearl.
+
+2.C++
+
+ C++ is a ‘C with classes‘. It’s very powerful object oriented programming language developed as successor of C. It is widely used in ‘Game programming‘ and various areas.
+
+3.Java
+
+ Java is a class-based, object-oriented programming language developed by Sun Microsystems in the 1990s. It's one of the most in-demand programming languages, a standard for enterprise software, web-based content, games and mobile apps, as well as the Android operating system. Java is designed to work across multiple software platforms, meaning a program written on Mac OS X, for example, could also run on Windows.
+
+4.C#
+
+ C# belongs to the Microsoft’s family of programming language and was developed in 2000 to be the part of the first ever release of Microsoft’s prestigious .NET framework. C# is very similar to Java in terms of capabilities. It has been said that C# combines the robustness of C++ with the advanced features of Java.
+The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. 
+
+5.Python
+
+ Python is rich, general purpose, high level programming language which supports multiple programming paradigms such as procedural,object oriented.
+Python is used in research area a lot, some of the popular web projects such as YouTube (entirely on Python), Google (some part on python) using python.
+Python has very popular web framework called ‘django‘ which makes python tough competitor to other web frameworks.
+
+6.JavaScript
+
+ JavaScript is client end scripting language developed by Netscape. JavaScript is becoming popular day by day in Web development zone and since the invention of Node, it is something you should learn ASAP. Some of popular Libraries such as jQuery, angularJS and NodeJS pull up the JavaScript at 7th position of top 10 programming languages.

@@ -1,0 +1,13 @@
+Problem 13. C# and .NET Differences
+
+Describe the difference between C# and .NET Framework in 2-3 sentences.
+Write your description in a text file called “csharp-and-dot-net-framework.txt”. Use English.
+
+
+C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework. 
+
+C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code.
+
+C# programs run on the .NET Framework, an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries.
+.NET isn't just a library, but also a runtime for executing applications.
+You can also use other languages to write .NET applications.
