@@ -15,5 +15,12 @@ class PrintNumbers
         Console.WriteLine(1);
         Console.WriteLine(101);
         Console.WriteLine(1001);
+
+        // Using the binary number system (the numbers 1, 5 and 9 are the binary 1, 101 and 1001)
+        Console.WriteLine("With loop \"for\":");
+        for (int i = 1, number = 1; i <= 3; i++, number += 4)
+        {
+            Console.WriteLine(Convert.ToString(number, 2));
+        }
     }
 }

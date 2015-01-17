@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 
 /*
     Problem 15.* Age after 10 Years
@@ -10,42 +12,24 @@ class AgeAfterTenYears
 {
     static void Main()
     {
-        // Collecting information about user birthday
-        Console.WriteLine("Please enter your date of birth (for example: DD MM YYYY):");
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
-        Console.WriteLine("Day: ");
-        int dayOfBirth = int.Parse(Console.ReadLine());
+        Console.Write("Enter your birthday (MM/DD/YYYY): ");
+        DateTime birthday = DateTime.Parse(Console.ReadLine());
 
-        Console.WriteLine("Month: ");
-        int monthOfBirth = int.Parse(Console.ReadLine());
+        // Console.WriteLine((new DateTime(2015, 6, 20) - new DateTime(1993, 6, 29)).Days / 365);
 
-        Console.WriteLine("Year: ");
-        int yearOfBirth = int.Parse(Console.ReadLine());
+        DateTime today = DateTime.Today;
+        int age = today.Year - birthday.Year;
 
-        DateTime birthday = new DateTime(yearOfBirth, monthOfBirth, dayOfBirth);
-        // End of collecting information
-
-        // Checking how old the user is
-        DateTime today = DateTime.Now;
-        int years;
-
-        if ((today.Month <= birthday.Month) && (today.Day <= birthday.Day))
+        // Check if the birthday is passed
+        // today.AddYears(-age) goes to the birthday I have calculated
+        if (birthday > today.AddYears(-age))
         {
-            years = (int)today.Year - 1 - (int)birthday.Year;
-            Console.WriteLine("Your age now:");
-            Console.WriteLine(years);
+            age--;
         }
-        else
-        {
-            years = (int)today.Year - (int)birthday.Year;
-            Console.WriteLine("Your age now:");
-            Console.WriteLine(years);
-        }
-        // End of checking the user age
 
-        // Age after 10 years
-        Console.WriteLine("Your age after 10 years:");
-        Console.Write(years + 10);
-        Console.WriteLine("years");
+        Console.WriteLine("Your age now: {0}", age);
+        Console.WriteLine("Your age after 10 years: {0}", age + 10);
     }
 }
