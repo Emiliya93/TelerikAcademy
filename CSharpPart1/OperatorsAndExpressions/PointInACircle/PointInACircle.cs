@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 
 /*
     Problem 7. Point in a Circle
@@ -10,6 +12,8 @@ class PointInACircle
 {
     static void Main()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
         int centerX = 0;
         int centerY = 0;
         int radius = 2;

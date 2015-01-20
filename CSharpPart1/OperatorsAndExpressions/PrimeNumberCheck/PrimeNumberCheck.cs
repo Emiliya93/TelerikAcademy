@@ -12,6 +12,27 @@ class PrimeNumberCheck
     {
         Console.WriteLine("Enter number:");
         int number = int.Parse(Console.ReadLine());
- 
+        bool isPrime = true;
+
+        if (number < 2)
+        {
+            isPrime = false;
+        }
+        else if ((number == 2) || (number == 3))
+        {
+            isPrime = true;
+        }
+        else
+        {
+            for (int i = 2; i <= Math.Sqrt(number); i++)
+            {
+                if ((number % i) == 0)
+                {
+                    isPrime = false;
+                }
+            }
+        }
+
+        Console.WriteLine(isPrime);
     }
 }

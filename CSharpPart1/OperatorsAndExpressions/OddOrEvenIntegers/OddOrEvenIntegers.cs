@@ -13,16 +13,22 @@ class OddOrEvenIntegers
         Console.WriteLine("Enter a number:");
         int number = int.Parse(Console.ReadLine());
 
+        Console.WriteLine("Is the number {0} odd?", number);
+        bool isOdd = (number % 2 == 0) ? false : true;
+        Console.WriteLine(isOdd);
+
+        string separator = new string('-', 20);
+        Console.WriteLine(separator);
+
+        // With if statement
+        Console.WriteLine("With \"if\" statement:");
         if ((number % 2) == 0)
         {
-            Console.WriteLine("The number {0} is even.", number);
+            Console.WriteLine("Is the number {0} odd? -> false", number);
         }
         else
         {
-            Console.WriteLine("The number {0} is odd", number);
+            Console.WriteLine("Is the number {0} odd? -> true", number);
         }
-
-        //string evenOrOdd = (number % 2 == 0) ? "EVEN" : "ODD";
-        //Console.WriteLine(evenOrOdd);
     }
 }

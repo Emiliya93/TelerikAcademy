@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
 
 /*
     Problem 2. Gravitation on the Moon
@@ -10,6 +12,8 @@ class GravitationOnTheMoon
 {
     static void Main()
     {
+        Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
         Console.WriteLine("Enter your weight on Earth:");
         double weightOnEarth = double.Parse(Console.ReadLine());
 
