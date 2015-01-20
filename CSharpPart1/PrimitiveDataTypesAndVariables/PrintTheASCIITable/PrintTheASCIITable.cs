@@ -14,10 +14,20 @@ class PrintTheASCIITable
 {
     static void Main()
     {
+        // To see the hole table you have to change console property:
+        // Upper left corner of the console->Properties->Layout->Screen Buffer Size->Height->800
+        Console.OutputEncoding = System.Text.Encoding.UTF8;
+
         for (int i = 0; i <= 255; i++)
         {
-            Console.WriteLine("|Dec|Oct|Hex|Char|");
-            Console.WriteLine("|{0,3}|{1,3}|{2,3:X}|{3,4}|", i, Convert.ToString(i, 8), Convert.ToString(i, 16), (char)i);
+            string separator = new string('-', 18);
+
+            if (!char.IsControl((char)i))
+            {
+                Console.WriteLine("|Dec|Oct|Hex|Char|");
+                Console.WriteLine("|{0,3}|{1,3}|{2,3:X}|{3,4}|", i, Convert.ToString(i, 8), Convert.ToString(i, 16), (char)i);
+                Console.WriteLine(separator);
+            }
         }
     }
 }

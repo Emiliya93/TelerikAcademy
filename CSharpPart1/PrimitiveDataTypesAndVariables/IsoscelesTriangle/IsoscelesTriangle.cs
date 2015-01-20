@@ -21,7 +21,7 @@ class IsoscelesTriangle
         char copyrightSymbol = '\u00A9';
         char space = ' ';
 
-        // Print the symbols. For more information about the {0}s (placeholders): http://msdn.microsoft.com/en-us/library/txafckwd(v=vs.110).aspx
+        // Print the symbols 
         Console.WriteLine("{0}{0}{0}{1}{0}{0}{0}", space, copyrightSymbol);
         Console.WriteLine("{0}{0}{1}{0}{1}{0}{0}", space, copyrightSymbol);
         Console.WriteLine("{0}{1}{0}{0}{0}{1}{0}", space, copyrightSymbol);

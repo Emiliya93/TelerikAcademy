@@ -10,8 +10,10 @@ class ExchangeVariableValues
 {
     static void Main()
     {
-        int a = 5;
-        int b = 10;
+        Console.Write("Enter first number: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Enter second number: ");
+        int b = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Before exchange: a = {0}; b={1}", a, b);
 

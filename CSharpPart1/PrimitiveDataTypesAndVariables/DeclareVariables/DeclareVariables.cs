@@ -14,13 +14,14 @@ class DeclareVariables
 {
     static void Main()
     {
-        ushort number1 = 52130;
-        sbyte number2 = -115;
-        int number3 = 4825932;
-        byte number4 = 97;
-        short number5 = -10000;
+        ushort numberOne = 52130;
+        sbyte numberTwo = -115;
+        int numberThree = 4825932;
+        byte numberFour = 97;
+        short numberFive = -10000;
 
+        // For more information about the {0}s (placeholders): http://msdn.microsoft.com/en-us/library/txafckwd(v=vs.110).aspx
         Console.WriteLine("{0} -> ushort{1}{2} -> sbyte{1}{3} -> int{1}{4} -> byte{1}{5} -> short", 
-            number1, '\n', number2, number3, number4, number5);
+            numberOne, '\n', numberTwo, numberThree, numberFour, numberFive);
     }
 }

@@ -19,13 +19,27 @@ class EmployeeData
 {
     static void Main()
     {
-        // Declare variables
-        string firstName = "Smiley";
-        string lastName = "Mikey";
-        byte age = 21;
-        char gender = 'f';
-        long idNumber = 8306112507;
-        int uniqueNumber = 27560001;
+        // Read from console the employee data
+        Console.WriteLine("Enter Employee Data:");
+        Console.Write("First Name: ");
+        string firstName = Console.ReadLine();
+
+        Console.Write("Last Name: ");
+        string lastName = Console.ReadLine();
+
+        Console.Write("Age (0 - 100): ");
+        byte age = byte.Parse(Console.ReadLine());
+
+        // Read only one character
+        Console.Write("Gender (m or f): ");
+        // This will take only the first character from the input
+        char gender = Console.ReadLine()[0];
+
+        Console.Write("ID Number (e.g. 8306112507): ");
+        long idNumber = long.Parse(Console.ReadLine());
+
+        Console.Write("Unique employee number (27560000…27569999): ");
+        int uniqueNumber = int.Parse(Console.ReadLine());
 
         Console.WriteLine("Employee information");
         Console.WriteLine();

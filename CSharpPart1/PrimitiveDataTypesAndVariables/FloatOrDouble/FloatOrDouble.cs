@@ -12,11 +12,11 @@ class FloatOrDouble
 {
     static void Main()
     {
-        double number1 = 34.567839023;
-        float number2 = 12.345F;
-        double number3 = 8923.1234857;
-        float number4 = 3456.091F;
+        double numberOne = 34.567839023;
+        float numberTwo = 12.345F;
+        double numberThree = 8923.1234857;
+        float numberFour = 3456.091F;
 
-        Console.WriteLine("{0} -> double{1}{2} -> float{1}{3} -> double{1}{4} -> float", number1, '\n', number2, number3, number4);
+        Console.WriteLine("{0} -> double{1}{2} -> float{1}{3} -> double{1}{4} -> float", numberOne, '\n', numberTwo, numberThree, numberFour);
     }
 }
