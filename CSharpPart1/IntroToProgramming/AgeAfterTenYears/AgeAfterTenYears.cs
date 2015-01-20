@@ -17,8 +17,6 @@ class AgeAfterTenYears
         Console.Write("Enter your birthday (MM/DD/YYYY): ");
         DateTime birthday = DateTime.Parse(Console.ReadLine());
 
-        // Console.WriteLine((new DateTime(2015, 6, 20) - new DateTime(1993, 6, 29)).Days / 365);
-
         DateTime today = DateTime.Today;
         int age = today.Year - birthday.Year;
 
