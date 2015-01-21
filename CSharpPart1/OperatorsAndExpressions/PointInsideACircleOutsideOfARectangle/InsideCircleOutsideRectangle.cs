@@ -57,6 +57,7 @@ class InsideCircleOutsideRectangle
             isOutsideRectangle = true;
         }
 
+        // Check if the point is within the circle and out of the rectangle
         if (isInCircle && isOutsideRectangle)
         {
             // given point (x, y) is within the circle and out of the rectangle
