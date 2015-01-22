@@ -6,6 +6,7 @@
     Write an expression that checks if given positive integer number n (n = 100) is prime
     (i.e. it is divisible without remainder only to itself and 1).
 */
+
 class PrimeNumberCheck
 {
     static void Main()
@@ -33,6 +34,7 @@ class PrimeNumberCheck
             }
         }
 
+        Console.WriteLine("Is the number {0} prime?", number);
         Console.WriteLine(isPrime);
     }
 }
