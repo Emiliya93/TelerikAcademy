@@ -19,35 +19,47 @@ class FormattingNumbers
     static void Main()
     {
         // Get number a
-        Console.WriteLine("Enter integer number a:");
+        Console.WriteLine("Enter integer number a (0 <= a <= 500):");
         int numA;
+        string input = Console.ReadLine();
+        bool isParsable = int.TryParse(input, out numA);
 
         // Check if the number a can be parsed in int
         // Check if a is not in interval (0 <= a <= 500) and repeat until a is in the interval
-        while (!(int.TryParse(Console.ReadLine(), out numA)) || (numA < 0) || (numA > 500))
+        while ((isParsable == false) || (numA < 0) || (numA > 500))
         {
             Console.WriteLine("Input was not in correct format! You must enter integer number!");
             Console.WriteLine("Enter integer number a:");
+            input = Console.ReadLine();
+            isParsable = int.TryParse(input, out numA);
         }
 
         // Get number b
         Console.Write("Enter floating-point number b: ");
         double numB;
+        input = Console.ReadLine().Replace(',', '.');
+        isParsable = double.TryParse(input, out numB);
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out numB)))
+        while (isParsable == false)
         {
             Console.WriteLine("Input was not in correct format! You must enter floating-point number!");
             Console.WriteLine("Enter floating-point number b:");
+            input = Console.ReadLine().Replace(',', '.');
+            isParsable = double.TryParse(input, out numB);
         }
 
         // Get number c
         Console.Write("Enter floating-point number c: ");
         double numC;
+        input = Console.ReadLine().Replace(',', '.');
+        isParsable = double.TryParse(input, out numC);
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out numC)))
+        while (isParsable == false)
         {
             Console.WriteLine("Input was not in correct format! You must enter floating-point number!");
             Console.WriteLine("Enter floating-point number c:");
+            input = Console.ReadLine().Replace(',', '.');
+            isParsable = double.TryParse(input, out numC);
         }
 
         // Printing the numbers

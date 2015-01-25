@@ -13,25 +13,18 @@ class NumberComparer
     {
         // Get first number to compare
         Console.Write("Enter first number to compare: ");
-        double firstNumber;
+        double[] numbers = new double[2];
 
-        while(!(double.TryParse(Console.ReadLine().Replace(',', '.'), out firstNumber)))
+        for (int i = 0; i < numbers.Length; i++)
         {
-            Console.WriteLine("Input was not in correct format. You must enter real number!");
-            Console.Write("Enter first number to compare: ");
-        }
-
-        // Get second number to compare
-        Console.Write("Enter second number to compare: ");
-        double secondNumber;
-
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out secondNumber)))
-        {
-            Console.WriteLine("Input was not in correct format. You must enter real number!");
-            Console.Write("Enter second number to compare: ");
+            while(!(double.TryParse(Console.ReadLine().Replace(',', '.'), out numbers[i])))
+            {
+                Console.WriteLine("Input was not in correct format. You must enter real number!");
+                Console.Write("Enter number {0} to compare: ", i + 1);
+            }
         }
 
         // Compare the numbers
-        Console.WriteLine("Greater -> {0}", Math.Max(firstNumber, secondNumber));
+        Console.WriteLine("Greater -> {0}", Math.Max(numbers[0], numbers[1]));
     }
 }

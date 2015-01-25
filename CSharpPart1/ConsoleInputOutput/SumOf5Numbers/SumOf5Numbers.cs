@@ -14,7 +14,7 @@ class SumOf5Numbers
         string numbersString = Console.ReadLine();
         double sum = 0;
 
-        string[] numbersArrey = numbersString.Split(' ');
+        string[] numbersArrey = numbersString.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
         for (int i = 0; i < numbersArrey.Length; i++)
         {

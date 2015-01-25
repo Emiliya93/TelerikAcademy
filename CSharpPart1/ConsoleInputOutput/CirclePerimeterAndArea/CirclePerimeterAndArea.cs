@@ -22,11 +22,16 @@ class CirclePerimeterAndArea
 
         Console.Write("Enter circle radius: ");
         double radius;
+        string input = Console.ReadLine().Replace(',','.');
+        bool isParsable = double.TryParse(input, out radius);
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out radius)))
+        // Check if input can be parsed to double
+        while (isParsable == false)
         {
             Console.WriteLine("Input was not in correct format. You must enter real number!");
             Console.Write("Enter circle radius: ");
+            input = Console.ReadLine().Replace(',', '.');
+            isParsable = double.TryParse(input, out radius);
         }
 
         double perimeter = 2 * Math.PI * radius;
@@ -34,7 +39,5 @@ class CirclePerimeterAndArea
 
         Console.WriteLine("Perimeter: {0:0.00}", perimeter);
         Console.WriteLine("Area: {0:F2}", area);
-
-
     }
 }

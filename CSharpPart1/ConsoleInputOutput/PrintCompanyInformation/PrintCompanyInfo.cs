@@ -55,6 +55,7 @@ class PrintCompanyInfo
 
         Console.Write("Manager age: ");
         byte managerAge;
+
         // Is correct input for age
         while (!(byte.TryParse(Console.ReadLine(), out managerAge)))
         {

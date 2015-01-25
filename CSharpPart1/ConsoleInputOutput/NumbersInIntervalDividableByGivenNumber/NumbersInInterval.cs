@@ -14,9 +14,9 @@ class NumbersInInterval
     {
         // Get the first positive integer number
         Console.Write("Enter first positive integer number: ");
-        uint firstNumber;
+        uint startNumber;
 
-        while (!(uint.TryParse(Console.ReadLine(), out firstNumber)))
+        while (!(uint.TryParse(Console.ReadLine(), out startNumber)))
         {
             Console.WriteLine("Input was not in correct format. You must enter positive integer number!");
             Console.Write("Enter first positive integer number: ");
@@ -25,9 +25,9 @@ class NumbersInInterval
 
         // Get the second positive integer number
         Console.Write("Enter first positive integer number: ");
-        uint secondNumber;
+        uint endNumber;
 
-        while (!(uint.TryParse(Console.ReadLine(), out secondNumber)))
+        while (!(uint.TryParse(Console.ReadLine(), out endNumber)))
         {
             Console.WriteLine("Input was not in correct format. You must enter positive integer number!");
             Console.Write("Enter second positive integer number: ");
@@ -35,29 +35,28 @@ class NumbersInInterval
         // End of getting the number
 
         // If the second number is smaller than first, exchange them
-        if (secondNumber < firstNumber)
+        if (endNumber < startNumber)
         {
-            firstNumber += secondNumber;
-            secondNumber = firstNumber - secondNumber;
-            firstNumber -= secondNumber;
+            startNumber += endNumber;
+            endNumber = startNumber - endNumber;
+            startNumber -= endNumber;
         }
         // End of exchange
 
         // Declare some helping variables
         int p = 0;
-        string separator = ", ";
 
-        // Create List to store the numbers that are in the interval and the reminder of the division by 5 is 0, 
+        // Create string to store the numbers that are in the interval and the reminder of the division by 5 is 0, 
         // so the printing can be after "for" loop
-        List<int> listOfNumbers = new List<int>();
+        string numbers = string.Empty;
 
-        // Find the numbers and store them in the List
-        for (int i = 0; i <= secondNumber; i++)
+        // Find the numbers and store them in the string "numbers"
+        for (int i = 0; i <= endNumber; i++)
         {
-            if ((i >= firstNumber) && (i <= secondNumber) && (i % 5 == 0))
+            if ((i >= startNumber) && (i <= endNumber) && (i % 5 == 0))
             {
                 p++;
-                listOfNumbers.Add(i);
+                numbers += i + ", ";
             }
         }
 
@@ -70,26 +69,10 @@ class NumbersInInterval
             Console.WriteLine("-");
             Environment.Exit(0);
         }
-
-        // Print the numbers
-        for (int i = 0; i < listOfNumbers.Count; i++)
+        else
         {
-            Console.Write(listOfNumbers[i]);
-
-            // Check if the numbers in the list are more than 1 and if the "for" loop is not on the last number,
-            // than print the separator ", "
-            if ((listOfNumbers.Count > 1) && (i != (listOfNumbers.Count - 1)))
-            {
-                Console.Write(separator);
-            }
-            else if (listOfNumbers.Count == 1)
-            {
-                Console.WriteLine(listOfNumbers[i]);
-            }
-            else if (i == (listOfNumbers.Count - 1))
-            {
-                Console.WriteLine();
-            }
+            // Print the numbers
+            Console.WriteLine(numbers.Substring(0, numbers.Length - 2));
         }
     }
 }

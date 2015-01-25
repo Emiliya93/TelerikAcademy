@@ -11,21 +11,28 @@ class QuadraticEquation
     static void Main()
     {
         Console.WriteLine("Enter coefficients of a quadratic equation ax2 + bx + c = 0");
-        // Get coefficient a
-        Console.Write("Enter coefficient a: ");
-        double a;
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out a)))
+        // Get coefficient a
+        Console.Write("Enter coefficient a (different from 0): ");
+        double a;
+        string input = Console.ReadLine().Replace(',', '.');
+        bool isParsable = double.TryParse(input, out a);
+
+        while ((isParsable == false) || (a == 0))
         {
             Console.WriteLine("Input was not in correct format! You must enter real number!");
-            Console.Write("Enter coefficient a: ");
+            Console.Write("Enter coefficient a (different from 0): ");
+            input = Console.ReadLine().Replace(',', '.');
+            isParsable = double.TryParse(input, out a);
         }
 
         // Get coefficient b
         Console.Write("Enter coefficient b: ");
         double b;
+        input = Console.ReadLine().Replace(',', '.');
+        isParsable = double.TryParse(input, out b);
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out b)))
+        while (isParsable == false)
         {
             Console.WriteLine("Input was not in correct format! You must enter real number!");
             Console.Write("Enter coefficient b: ");
@@ -34,11 +41,15 @@ class QuadraticEquation
         // Get coefficient c
         Console.Write("Enter coefficient c: ");
         double c;
+        input = Console.ReadLine().Replace(',', '.');
+        isParsable = double.TryParse(input, out c);
 
-        while (!(double.TryParse(Console.ReadLine().Replace(',', '.'), out c)))
+        while (isParsable == false)
         {
             Console.WriteLine("Input was not in correct format! You must enter real number!");
             Console.Write("Enter coefficient c: ");
+            input = Console.ReadLine().Replace(',', '.');
+            isParsable = double.TryParse(input, out c);
         }
 
         double discriminant = (b * b) - (4 * a * c);
