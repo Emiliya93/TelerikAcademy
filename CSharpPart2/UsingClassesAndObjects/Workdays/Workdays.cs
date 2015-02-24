@@ -19,8 +19,15 @@
             DateTime day = DateTime.Parse(Console.ReadLine());
 
             int workdays = CountWorkDays(day);
-            Console.WriteLine("From {0:dd/MMM/yyyy} to {1:dd/MMM/yyyy} (inclusive) the workdays are:", DateTime.Now.Date, day.Date);
-            Console.WriteLine("Workdays: {0}", workdays);
+            if (workdays <= 0)
+            {
+                Console.WriteLine("No workdays!");
+            }
+            else
+            {
+                Console.WriteLine("From {0:dd/MMM/yyyy} to {1:dd/MMM/yyyy} (inclusive) the workdays are:", DateTime.Now.Date, day.Date);
+                Console.WriteLine("Workdays: {0}", workdays);
+            }
         }
 
         static int CountWorkDays(DateTime toDate)
