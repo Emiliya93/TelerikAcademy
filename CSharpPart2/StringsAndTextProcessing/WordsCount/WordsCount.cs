@@ -15,40 +15,21 @@
         {
             string text = "C# is not C++, not PHP and not Delphi!";
             string[] words = text.Split(new[] { ' ', ',', '.', ':', ';', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
-            List<string> checkedWord = new List<string>();
             Dictionary<string, int> foundWord = new Dictionary<string, int>();
 
-            bool notInDictionary = true;
             for (int i = 0; i < words.Length; i++)
             {
-                string word = words[i];
-                
-                if (checkedWord.Contains(words[i]))
+                if (!foundWord.ContainsKey(words[i]))
                 {
-                    foundWord[words[i]]++;
-                    continue;
+                    foundWord.Add(words[i], 0);
                 }
-                foreach (var pair in foundWord)
-                {
-                    if (words[i] == pair.Key)
-                    {
-                        foundWord[words[i]]++;
-                    }
-                    else
-                    {
-                        notInDictionary = true;
-                    }
-                }
-                if (foundWord.Keys.Count == 0 || notInDictionary)
-                {
-                    foundWord[words[i]] = 1;
-                }
-                checkedWord.Add(words[i]);
+
+                foundWord[words[i]]++;
             }
 
             foreach (var pair in foundWord)
             {
-                Console.WriteLine("{0} -> {1} time/s", pair.Key, pair.Value);
+                Console.WriteLine("{0} -> {1} {2}", pair.Key, pair.Value, pair.Value > 1 ? "times" : "time");
             }
         }
     }
