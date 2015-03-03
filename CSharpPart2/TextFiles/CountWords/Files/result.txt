@@ -1,0 +1,5 @@
+and -> 4
+friend -> 3
+my -> 2
+out -> 2
+I -> 0
