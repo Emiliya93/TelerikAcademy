@@ -55,7 +55,7 @@
                 string line = string.Empty;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    string[] words = line.Split(new[] { ' ', ',', '.', ':', ';', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+                    string[] words = line.Split(new[] { ' ', ',', '.', ':', ';', '!', '?', '-' }, StringSplitOptions.RemoveEmptyEntries);
                     foreach (string word in words)
                     {
                         if (listOfWords.Keys.Contains(word))
