@@ -39,7 +39,7 @@ class DecimalToHexadecimalNumber
                 case 15: hexNum += "F"; break;
                 default:
                     {
-                        hexNum += (currentDec);
+                        hexNum += currentDec;
                         break;
                     }
             }
