@@ -2,7 +2,7 @@
 {
     using System;
 
-    public class Account
+    public class Account : IDepositable
     {
         // Fields
         private Customer customer;
@@ -13,7 +13,8 @@
         public Account(Customer customer, decimal balance, decimal interestRate)
         {
             this.Customer = customer;
-
+            this.Balance = balance;
+            this.InterestRate = interestRate;
         }
 
         // Properties
@@ -48,7 +49,7 @@
             }
         }
 
-        public double InterestRate
+        public decimal InterestRate
         {
             get
             {

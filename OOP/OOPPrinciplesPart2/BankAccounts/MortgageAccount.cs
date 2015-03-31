@@ -2,9 +2,9 @@
 {
     using System;
 
-    public class Mortgage : Account
+    public class MortgageAccount : Account, IDepositable
     {
-        public Mortgage(Customer customer, decimal balance, decimal interestRate)
+        public MortgageAccount(Customer customer, decimal balance, decimal interestRate)
             : base(customer, balance, interestRate)
         {
         }

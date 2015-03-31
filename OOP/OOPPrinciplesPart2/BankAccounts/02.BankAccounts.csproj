@@ -45,13 +45,15 @@
     <Compile Include="BankAccountsTest.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DepositAccount.cs" />
+    <Compile Include="IDepositable.cs" />
+    <Compile Include="IWithDrawable.cs" />
     <Compile Include="LoanAccount.cs" />
-    <Compile Include="Mortgage.cs" />
+    <Compile Include="MortgageAccount.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="AccountsDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
