@@ -1,0 +1,43 @@
+﻿body {
+    background-color: #A9A9A9;
+}
+
+h1 {
+    text-align: center;
+    color: #FAFAD2;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    text-align: center;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+ul > li:last-child {
+    text-decoration: underline;
+}
+
+article > header > h2 {
+    color: #FAFAD2;
+}
+
+article > footer {
+    font-size: 10px;
+}
+
+body > footer {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+#background-color {
+    background-color: #D3D3D3;
+}

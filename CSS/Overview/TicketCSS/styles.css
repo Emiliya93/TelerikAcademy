@@ -1,0 +1,56 @@
+﻿body, h3, table {
+    margin:0;
+    padding:0;
+}
+
+table {
+    font-size: 13px;
+}
+
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 50px;
+}
+
+div {
+    width: 304px;
+    background-color: #595959;
+}
+
+h3 {
+    color: #AFAFB0;
+    font-weight: 100;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.label {
+    font-style: italic;
+    color: #F5F8FF;
+    width: 100px;
+}
+
+#circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #70B379;
+    display: inline-block;
+}
+
+.font-yellow {
+    color: #F0E49A;
+}
+
+.font-grey {
+    color: #B3AF9C;
+}
+
+#font-red {
+    color: #FF1628;
+}
+
+#font-orange {
+    color: #D0624B;
+}

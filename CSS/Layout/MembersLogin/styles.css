@@ -1,0 +1,89 @@
+﻿body, 
+div,
+img,
+form,
+label,
+input,
+button,
+section,
+article,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 640px;
+    font-size: 16px;
+    border: 1px solid #2B2B2B;
+    border-radius: 5px;
+}
+
+header {
+    height: 50px;
+    background-color: #2B2B2B;
+    color: white;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+div#logo-container, div#logo-container img {
+    display: inline-block;
+}
+
+div#logo-container img {
+    width: 35px;
+    height: 40px;
+}
+
+form {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 60px;
+
+}
+
+form label {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+form input {
+    margin-right: 10px;
+    width: 150px;
+    height: 20px;
+}
+
+form button {
+    background-image: url("Images/button.jpg");
+    background-size: cover;
+    border: none;
+    width: 55px;
+    height: 30px;
+}
+
+section article {
+    background-color: #3B3B3B;
+    padding: 10px;
+}
+
+section article h1 {
+    font-weight: normal;
+    font-size: 2em;
+    color: #F0DA24;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section article p {
+    color: #A5A5A5;
+}
+
+section article p strong {
+    color: white;
+    font-weight: normal;
+}
