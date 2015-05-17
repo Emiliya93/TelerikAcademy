@@ -1,0 +1,11 @@
+fieldset {
+    border: 1px solid grey;
+}
+
+.disc {
+    list-style-type: disc;
+}
+
+#circle {
+    list-style-type: circle;
+}

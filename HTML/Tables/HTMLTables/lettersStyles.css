@@ -1,0 +1,14 @@
+.center {
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.right {
+	padding-left: 15px;
+	text-align: right;
+}
+
+#right-bottom-corner {
+	vertical-align: bottom;
+}

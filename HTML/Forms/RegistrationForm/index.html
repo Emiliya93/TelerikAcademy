@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Registration Form</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="last-name">Last Name</label>
+                </td>
+                <td>
+                    <input type="text" name="last-name" id="last-name" class="long-input" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="first-name">First Name</label>
+                </td>
+                <td>
+                    <input type="text" name="first-name" id="first-name" class="long-input" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+                </td>
+                <td>
+                    <textarea name="address" id="address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <input type="text" name="city" id="city" />
+                    <label for="state" id="state-label">State</label>
+                    <input type="text" name="state" id="state" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="zip-postal-code">Zip/Postal Code</label>
+                </td>
+                <td>
+                    <input type="text" name="zip-postal-code" id="zip-postal-code" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Country</label>
+                </td>
+                <td>
+                    <select name="country" id="country" required="required">
+                        <option value="AL">Albania</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BR">Brazil</option>
+                        <option value="BC">British Indian Ocean Ter</option>
+                        <option value="BN">Brunei</option>
+                        <option value="BG" selected="selected">Bulgaria</option>
+                        <option value="CN">China</option>
+                        <option value="CI">Christmas Island</option>
+                        <option value="EG">Egypt</option>
+                        <option value="GM">Gambia</option>
+                        <option value="DE">Germany</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russia</option>
+                        <option value="SP">Saipan</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone-input">Phone(country code,<br /> area code, number )</label>
+                </td>
+                <td>
+                    <span>(+</span><input type="text" name="phone" id="phone-input" tabindex="1" class="phone-code" /><span>)</span>
+                    <input type="text" name="phone" class="phone-code" tabindex="2" />
+                    <input type="text" name="phone" id="phone" tabindex="3" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">E-mail</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" class="long-input" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="birth-date">Birth date</label>
+                </td>
+                <td>
+                    <input type="datetime" name="birth-date" id="birth-date" placeholder="дд.мм.гггг г." />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <select name="gender" id="gender" required="required">
+                        <option value="male" selected="selected">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="starting-date">Starting date</label>
+                </td>
+                <td>
+                    <input type="radio" name="starting-date" id="spring" /><label for="spring" class="start-date-labels">Spring 2015</label>
+                    <input type="radio" name="starting-date" id="summer" /><label for="summer" class="start-date-labels">Summer 2015</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments-questions">Comments/Questions</label>
+                </td>
+                <td>
+                    <textarea name="comments-questions" id="comments-questions"></textarea>
+                </td>
+            </tr>
+            <tr id="buttons-row">
+                <td colspan="2">
+                    <input type="submit" name="submit" />
+                    <input type="reset" name="reset" value="Clean This Form" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

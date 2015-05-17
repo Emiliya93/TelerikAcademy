@@ -1,0 +1,28 @@
+table,tr,td {
+	border: 2px solid #219E59;
+	border-collapse: collapse;
+}
+
+td {
+	padding: 10px;
+	width: 80px;
+	height: 75px;
+
+	font-size: 40px;
+	color: #35FF90;
+	font-weight: bold;
+	text-align: center;
+}
+
+th {
+	width: 80px;
+	height: 95px;
+}
+
+#input {
+	width: 99%;
+	height: 100%;
+	margin: 0px 0px;
+	text-align: right;
+	font-size: 35px;
+}

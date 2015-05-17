@@ -1,0 +1,20 @@
+﻿table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+tr > td:last-child {
+    font-weight: bold;
+}
+
+#lists-nav {
+    font-weight: normal;
+}
+
+nav {
+    display: inline;
+}
