@@ -1,0 +1,44 @@
+﻿body, section, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    background-color:  #37374f;
+}
+
+body {
+    padding: 5px;
+}
+
+section {
+    padding: 5px;
+    border: 1px solid #42426F;
+}
+
+section h1 {
+    color: #a38cce;
+}
+
+section p {
+    padding: 5px;
+    color: #f7f2c3;
+}
+
+section input {
+    display: block;
+    width: 180px;
+    height: 20px;
+    padding: 2px 5px;
+    color: #c6f8ae;
+}
+
+section input:disabled {
+    width: 100px;
+}
+
+section button {
+    margin-top: 2px;
+    padding: 5px;
+    width: auto;
+    background-color: #4d1b8e;
+    color: white;
+
+}
