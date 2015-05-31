@@ -9,6 +9,10 @@
     <script src="2multiplicationSign.js"></script>
     <script src="3biggestOfThree.js"></script>
     <script src="4sortThreeNumbers.js"></script>
+    <script src="5digitAsWord.js"></script>
+    <script src="6quadraticEquation.js"></script>
+    <script src="7biggestOfFive.js"></script>
+    <script src="8numberAsWords.js"></script>
 
     <section>
         <h1>Problem 1. Exchange if greater</h1>
@@ -17,9 +21,9 @@
             As a result print the values a and b, separated by a space.
         </p>
         <input id="A1" type="text" placeholder="Enter number a here" />
-        <input id="B1" type="text" value="" placeholder="Enter number b here" />
+        <input id="B1" type="text" placeholder="Enter number b here" />
         <button onclick="exchangeIfGreater()">Exchange if greater</button>
-        <input id="exchangeResult" disabled />
+        <input id="exchangeResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -28,11 +32,11 @@
             Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it.
             Use a sequence of if operators.
         </p>
-        <input id="A2" type="text" value="" />
-        <input id="B2" type="text" value="" />
-        <input id="C2" type="text" value="" />
+        <input id="A2" type="text" placeholder="Enter number a here" />
+        <input id="B2" type="text" placeholder="Enter number b here" />
+        <input id="C2" type="text" placeholder="Enter number c here" />
         <button onclick="multiplicationSign()">Show sign</button>
-        <input id="signResult" disabled />
+        <input id="signResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -41,11 +45,11 @@
             Write a script that finds the biggest of three numbers.
             Use nested if statements.
         </p>
-        <input id="A3" type="text" value="" />
-        <input id="B3" type="text" value="" />
-        <input id="C3" type="text" value="" />
+        <input id="A3" type="text" placeholder="Enter number a here" />
+        <input id="B3" type="text" placeholder="Enter number b here" />
+        <input id="C3" type="text" placeholder="Enter number c here" />
         <button onclick="biggestOfThree()">Biggest?</button>
-        <input id="biggestResult" disabled />
+        <input id="biggestResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -55,11 +59,11 @@
             Use nested if statements.
             Note: Don’t use arrays and the built-in sorting functionality
         </p>
-        <input id="A4" type="text" value="" />
-        <input id="B4" type="text" value="" />
-        <input id="C4" type="text" value="" />
+        <input id="A4" type="text" placeholder="Enter number a here" />
+        <input id="B4" type="text" placeholder="Enter number b here" />
+        <input id="C4" type="text" placeholder="Enter number c here" />
         <button onclick="sortThreeNumbers()">Sort numbers</button>
-        <input id="sortedResult" disabled />
+        <input id="sortedResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -69,23 +73,23 @@
             Print “not a digit” in case of invalid input.
             Use a switch statement.
         </p>
-        <input type="text" value="" id="" />
-        <input type="text" value="" id="" />
-        <button onclick=""></button>
-        <input id="" disabled />
+        <input id="digit" type="text" placeholder="Enter a digit (0-9) here" />
+        <button onclick="digitAsWord()">Show digit as word</button>
+        <input id="digitWordResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
         <h1>Problem 6. Quadratic equation</h1>
         <p>
-            Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots).
+            Write a script that reads the coefficients a, b and c of a quadratic equation <strong>ax2 + bx + c = 0</strong> and solves it (prints its real roots).
             Calculates and prints its real roots.
             Note: Quadratic equations may have 0, 1 or 2 real roots.
         </p>
-        <input type="text" value="" id="" />
-        <input type="text" value="" id="" />
-        <button onclick=""></button>
-        <input id="" disabled />
+        <input id="A6" type="text" placeholder="Enter number a here" />
+        <input id="B6" type="text" placeholder="Enter number b here" />
+        <input id="C6" type="text" placeholder="Enter number c here" />
+        <button onclick="quadraticEquation()">Find real roots</button>
+        <input id="equationResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -94,10 +98,13 @@
             Write a script that finds the greatest of given 5 variables.
             Use nested if statements.
         </p>
-        <input type="text" value="" id="" />
-        <input type="text" value="" id="" />
-        <button onclick=""></button>
-        <input id="" disabled />
+        <input id="A7" type="text" placeholder="Enter number a here" />
+        <input id="B7" type="text" placeholder="Enter number b here" />
+        <input id="C7" type="text" placeholder="Enter number c here" />
+        <input id="D7" type="text" placeholder="Enter number d here" />
+        <input id="E7" type="text" placeholder="Enter number e here" />
+        <button onclick="biggestOfFive()">Find biggest</button>
+        <input id="biggestOfFiveResult" placeholder="Result will be here" disabled />
     </section>
 
     <section>
@@ -105,10 +112,9 @@
         <p>
             Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.
         </p>
-        <input type="text" value="" id="" />
-        <input type="text" value="" id="" />
-        <button onclick=""></button>
-        <input id="" disabled />
+        <input id="number" type="text" placeholder="Enter number here" />
+        <button onclick="numberAsWords()">Number as word</button>
+        <input id="numberAsWordsResult" disabled placeholder="Result will be here" />
     </section>
 </body>
 </html>
