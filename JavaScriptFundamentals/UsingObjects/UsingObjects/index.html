@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using Objects</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="scripts/1planarCoordinates.js"></script>
+    <script src="scripts/2removeElements.js"></script>
+    <script src="scripts/3deepcopy.js"></script>
+    <script src="scripts/4hasProperty.js"></script>
+    <script src="scripts/5youngestPerson.js"></script>
+
+    <section>
+        <div>
+            Results will be in console
+        </div>
+    </section>
+    <section>
+        <h1>Problem 1. Planar coordinates</h1>
+        <p>
+            <ul>
+                <li>
+                    Write functions for working with shapes in standard Planar coordinate system.
+
+                    <ul>
+                        <li>  <strong>Points</strong> are represented by coordinates P(X, Y)</li>
+                        <li>  <strong>Lines</strong> are represented by two points, marking their beginning and ending L(P1(X1,Y1), P2(X2,Y2))</li>
+                    </ul>
+                </li>
+                <li>  Calculate the distance between two points.</li>
+                <li>  Check if three segment lines can form a triangle.</li>
+            </ul>
+        </p>
+    </section>
+    <section>
+        <h1>Problem 2. Remove elements</h1>
+        <p>
+            Write a function that removes all elements with a given value.
+            Attach it to the array type.
+            Read about prototype and how to attach methods.
+
+            <div>
+                <span>
+                    var arr = [1,2,1,4,1,3,4,1,111,3,2,1,'1'];
+                    arr.remove(1); //arr = [2,4,3,4,111,3,2,'1'];
+                </span>
+            </div>
+        </p>
+    </section>
+    <section>
+        <h1>Problem 3. Deep copy</h1>
+        <p>
+            Write a function that makes a deep copy of an object.
+            The function should work for both primitive and reference types.
+        </p>
+    </section>
+    <section>
+        <h1>Problem 4. Has property</h1>
+        <p>
+            Write a function that checks if a given object contains a given property.
+            <div>
+                <span>
+                    var obj  = …;
+                    var hasProp = hasProperty(obj, 'length');
+                </span>
+            </div>
+        </p>
+    </section>
+    <section>
+        <h1>Problem 5. Youngest person</h1>
+        <p>
+            Write a function that finds the youngest person in a given array of people and prints his/hers full name
+            Each person has properties firstname, lastname and age.
+            <div>
+                <span>
+                    Example:
+
+                    var people = [
+                    { firstname : 'Gosho', lastname: 'Petrov', age: 32 },
+                    { firstname : 'Bay', lastname: 'Ivan', age: 81},… ];
+                </span>
+            </div>
+        </p>
+    </section>
+    <section>
+        <h1>Problem 6.</h1>
+        <p>
+            Write a function that groups an array of people by age, first or last name.
+            The function must return an associative array, with keys - the groups, and values - arrays with people in this groups
+            Use function overloading (i.e. just one function)
+            <div>
+                <span>
+                    Example:
+
+                    var people = {…};
+                    var groupedByFname = group(people, 'firstname');
+                    var groupedByAge= group(people, 'age');
+                </span>
+            </div>
+        </p>
+    </section>
+</body>
+</html>
