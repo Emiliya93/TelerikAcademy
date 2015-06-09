@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Functions</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="scripts/1lastDigitAsWord.js"></script>
+    <script src="scripts/2reverseNumber.js"></script>
+    <script src="scripts/3countWord.js"></script>
+    <script src="scripts/4numberOfElements.js"></script>
+    <script src="scripts/5appearanceCount.js"></script>
+    <script src="scripts/6largerThanNeighbours.js"></script>
+    <script src="scripts/7firstLargerNeighbour.js"></script>
+
+    <section>
+        <h1>Problem 1. English digit</h1>
+        <p>Write a function that returns the last digit of given integer as an English word.</p>
+        <input id="number1" type="text" placeholder="Enter number here" />
+        <button onclick="task1()">Show digit as word</button>
+        <div id="lastDigitResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+
+    <section>
+        <h1>Problem 2. Reverse number</h1>
+        <p>Write a function that reverses the digits of given decimal number.</p>
+        <input id="number2" type="text" placeholder="Enter number here" />
+        <button onclick="task2()">Reverse</button>
+        <div id="reversedNumber">
+            <span>Result will be here</span>
+        </div>
+    </section>
+
+    <section>
+        <h1>Problem 3. Occurrences of word</h1>
+        <p>
+            Write a function that finds all the occurrences of word in a text.
+            The search can be case sensitive or case insensitive.
+            Use function overloading.
+        </p>
+        <textarea id="text3" placeholder="Enter text here"></textarea>
+        <input id="word3" type="text" placeholder="Enter word to count" />
+        <button onclick="task3(true)">Case sensitive</button>
+        <button onclick="task3(false)">Case insensitive</button>
+        <div id="wordsCountResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+    <section>
+        <h1>Problem 4. Number of elements</h1>
+        <p>Write a function to count the number of div elements on the web page</p>
+        <button onclick="task4()">Count divs on this html page</button>
+        <div id="divCountResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+    <section>
+        <h1>Problem 5. Appearance count</h1>
+        <p>
+            Write a function that counts how many times given number appears in given array.
+            Write a test function to check if the function is working correctly.
+        </p>
+        <input id="numbers5" type="text" placeholder="Numbers, separated with space" />
+        <input id="numberToSearch" type="text" placeholder="Number to count appearance" />
+        <button onclick="task5()">Count appearance</button>
+        <div id="numberCountResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+    <section>
+        <h1>Problem 6. Larger than neighbours</h1>
+        <p>
+            Write a function that checks if the element at given position in given array of integers is bigger than its two neighbours (when such exist).
+        </p>
+        <input id="arrOfInts" type="text" placeholder="Enter integers, separated by space" />
+        <input id="position" type="text" placeholder="Enter position of element" />
+        <button onclick="task6()">Check</button>
+        <div id="largerResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+    <section>
+        <h1>Problem 7. First larger than neighbours</h1>
+        <p>
+            Write a function that returns the index of the first element in array that is larger than its neighbours or -1, if there’s no such element.
+            Use the function from the previous exercise.
+        </p>
+        <input id="arr7" type="text" placeholder="Enter integers, separated by space" />
+        <button onclick="task7()">Check</button>
+        <div id="firstLargerResult">
+            <span>Result will be here</span>
+        </div>
+    </section>
+</body>
+</html>
