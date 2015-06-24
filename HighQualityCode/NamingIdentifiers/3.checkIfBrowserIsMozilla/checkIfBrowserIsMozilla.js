@@ -2,13 +2,14 @@
  * Refactor the following examples to produce code with well-named identifiers in JavaScript
  */
 
-function _ClickON_TheButton(THE_event, argumenti) {
-	var moqProzorec = window,
-		brauzyra = moqProzorec.navigator.appCodeName,
-		ism = brauzyra == "Mozilla";
-	if (ism) {
-		alert("Yes");
-	} else {
-		alert("No");
-	}
+function checkIfBrowserIsMozilla(event, arguments) {
+    var myWindow = window,
+        browser = myWindow.navigator.appCodeName,
+        isMozilla = (browser === 'Mozilla');
+
+    if (isMozilla) {
+        alert("Yes");
+    } else {
+        alert("No");
+    }
 }
