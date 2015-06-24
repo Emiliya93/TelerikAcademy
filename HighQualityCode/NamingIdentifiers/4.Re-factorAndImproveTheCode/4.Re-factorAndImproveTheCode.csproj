@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D223D6B0-64D4-4DCE-A82C-89C0528C6F43}</ProjectGuid>
+    <ProjectGuid>{BEFDFE27-5903-4D74-A9AD-60E30CF357AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Task1.class_123inC</RootNamespace>
-    <AssemblyName>Task1.class_123inC</AssemblyName>
+    <RootNamespace>_4.Re_factorAndImproveTheCode</RootNamespace>
+    <AssemblyName>4.Re-factorAndImproveTheCode</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Engine.cs" />
-    <Compile Include="Printer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

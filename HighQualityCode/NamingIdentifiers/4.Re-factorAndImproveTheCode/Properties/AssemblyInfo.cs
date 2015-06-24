@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Task1. class_123inC")]
+[assembly: AssemblyTitle("4.Re-factorAndImproveTheCode")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Task1. class_123inC")]
+[assembly: AssemblyProduct("4.Re-factorAndImproveTheCode")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("2e69f875-4982-4fa0-b5bf-cfc9ae6e3a32")]
+[assembly: Guid("85d1669e-256c-4d51-b9da-6ff585be6cfa")]
 
 // Version information for an assembly consists of the following four values:
 //
