@@ -1,15 +1,17 @@
 ﻿namespace MakePerson
 {
-    class Person
+    public class Person
     {
         public Person(int age)
         {
             this.Age = age;
-            SetNameAndGender(this.Age);
+            this.SetNameAndGender(this.Age);
         }
 
         public Gender Gender { get; set; }
+
         public string Name { get; set; }
+
         public int Age { get; set; }
 
         private void SetNameAndGender(int age)

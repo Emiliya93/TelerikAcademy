@@ -6,9 +6,9 @@ namespace PrintBoolOnConsole
 {
     using System;
 
-    class PrintInConsole
+    public class PrintInConsole
     {
-        const int maxCount = 6;
+        private const int MaxCount = 6;
 
         public static void Main()
         {
