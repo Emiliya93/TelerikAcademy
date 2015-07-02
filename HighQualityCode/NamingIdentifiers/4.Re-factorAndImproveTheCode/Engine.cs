@@ -3,51 +3,22 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Text;
 
     public class Mines
     {
-        public class Player
-        {
-            private string name;
-            private int points;
+        private const int MaxPoints = 35;
 
-            public Player()
-            {
-            }
-
-            public Player(string name, int points)
-            {
-                this.Name = name;
-                this.Points = points;
-            }
-
-            public string Name
-            {
-                get 
-                { 
-                    return this.name; 
-                }
-
-                private set 
-                {
-                    this.name = value; 
-                }
-            }
-
-            public int Points
-            {
-                get 
-                {
-                    return this.points; 
-                }
-                
-                private set
-                { 
-                    this.points = value; 
-                }
-            }
-        }
+        private const string TopCommand = "top";
+        private const string RestartCommand = "restart";
+        private const string ExitCommand = "exit";
+        private const string TurnCommand = "turn";
+       
+        private const char BombSymbol = '*';
+        private const char NoBombSymbol = '-';
+        private const char DefaultHiddenFieldSymbol = '?';
+   
+        private const int BoardRows = 5;
+        private const int BoardColumns = 10;
 
         // TODO: Refactor Main method
         public static void Main()
@@ -60,21 +31,28 @@
             List<Player> champions = new List<Player>(6);
             int row = 0;
             int col = 0;
-            bool flag = true;
-            const int maks = 35;
-            bool flag2 = false;
+            bool isNewGame = true;
+            bool isGameAimedWithMaxPoints = false;
 
             do
             {
-                if (flag)
+                if (isNewGame)
                 {
-                    Console.WriteLine("Hajde da igraem na “Mini4KI”. Probvaj si kasmeta da otkriesh poleteta bez mini4ki." +
-                    " Komanda 'top' pokazva klasiraneto, 'restart' po4va nova igra, 'exit' izliza i hajde 4ao!");
+                    Console.WriteLine("Let's play the game \"Mines\". Try your luck to find field without mines/bombs.");
+                    Console.WriteLine(
+                        "Command {0} shows rating, {1} starts new game, {2} to exit the game!", 
+                        TopCommand, 
+                        RestartCommand, 
+                        ExitCommand);
+
                     PrintBoard(board);
-                    flag = false;
+                    isNewGame = false;
                 }
-                Console.Write("Daj red i kolona : ");
-                command = Console.ReadLine().Trim();
+
+                Console.Write("Enter row and column: ");
+                string input = Console.ReadLine();
+                command = input.Trim();
+
                 if (command.Length >= 3)
                 {
                     if (int.TryParse(command[0].ToString(), out row) &&
@@ -82,35 +60,37 @@
                         row <= board.GetLength(0) &&
                         col <= board.GetLength(1))
                     {
-                        command = "turn";
+                        command = TurnCommand;
                     }
                 }
+
                 switch (command)
                 {
-                    case "top":
-                        Rating(champions);
+                    case TopCommand:
+                        PrintRating(champions);
                         break;
-                    case "restart":
+                    case RestartCommand:
                         board = InitializeGameBoard();
                         bombs = LoadBombs();
                         PrintBoard(board);
                         isPlayerOnBomb = false;
-                        flag = false;
+                        isNewGame = false;
                         break;
-                    case "exit":
-                        Console.WriteLine("4a0, 4a0, 4a0!");
+                    case ExitCommand:
+                        Console.WriteLine("You have exited the game. Hope you enjoyed it, come again!");
                         break;
-                    case "turn":
-                        if (bombs[row, col] != '*')
+                    case TurnCommand:
+                        if (bombs[row, col] != BombSymbol)
                         {
-                            if (bombs[row, col] == '-')
+                            if (bombs[row, col] == NoBombSymbol)
                             {
                                 PlayerTurn(board, bombs, row, col);
                                 pointsCount++;
                             }
-                            if (maks == pointsCount)
+
+                            if (MaxPoints == pointsCount)
                             {
-                                flag2 = true;
+                                isGameAimedWithMaxPoints = true;
                             }
                             else
                             {
@@ -121,80 +101,91 @@
                         {
                             isPlayerOnBomb = true;
                         }
+
                         break;
                     default:
-                        Console.WriteLine("\nGreshka! nevalidna Komanda\n");
+                        Console.WriteLine("\nInvalid command!\n");
                         break;
                 }
+
                 if (isPlayerOnBomb)
                 {
                     PrintBoard(bombs);
-                    Console.Write("\nHrrrrrr! Umria gerojski s {0} to4ki. " +
-                        "Daj si niknejm: ", pointsCount);
-                    string niknejm = Console.ReadLine();
-                    Player t = new Player(niknejm, pointsCount);
+                    Console.WriteLine("\nUups! Game over with {0} points. ", pointsCount);
+
+                    // TODO: Extract in method AddPlayerInRatingList
+                    Console.Write("Enter your name: ");
+                    string name = Console.ReadLine();
+                    Player player = new Player(name, pointsCount);
+
                     if (champions.Count < 5)
                     {
-                        champions.Add(t);
+                        champions.Add(player);
                     }
                     else
                     {
                         for (int i = 0; i < champions.Count; i++)
                         {
-                            if (champions[i].Points < t.Points)
+                            if (champions[i].Points < player.Points)
                             {
-                                champions.Insert(i, t);
+                                champions.Insert(i, player);
                                 champions.RemoveAt(champions.Count - 1);
                                 break;
                             }
                         }
                     }
-                    champions.Sort((Player r1, Player r2) => r2.Name.CompareTo(r1.Name));
-                    champions.Sort((Player r1, Player r2) => r2.Points.CompareTo(r1.Points));
-                    Rating(champions);
+
+                    champions.Sort((Player p1, Player p2) => p2.Name.CompareTo(p1.Name));
+                    champions.Sort((Player p1, Player p2) => p2.Points.CompareTo(p1.Points));
+
+                    PrintRating(champions);
 
                     board = InitializeGameBoard();
                     bombs = LoadBombs();
                     pointsCount = 0;
                     isPlayerOnBomb = false;
-                    flag = true;
+                    isNewGame = true;
                 }
-                if (flag2)
+
+                if (isGameAimedWithMaxPoints)
                 {
-                    Console.WriteLine("\nBRAVOOOS! Otvri 35 kletki bez kapka kryv.");
+                    Console.WriteLine("\nPerfect! You found {0} cells in a game.", MaxPoints);
                     PrintBoard(bombs);
-                    Console.WriteLine("Daj si imeto, batka: ");
-                    string imeee = Console.ReadLine();
-                    Player to4kii = new Player(imeee, pointsCount);
-                    champions.Add(to4kii);
-                    Rating(champions);
+
+                    // TODO: Extract in method AddPlayerInRatingList
+                    Console.WriteLine("Enter your name: ");
+                    string name = Console.ReadLine();
+                    Player player = new Player(name, pointsCount);
+                    champions.Add(player);
+
+                    PrintRating(champions);
+
                     board = InitializeGameBoard();
                     bombs = LoadBombs();
                     pointsCount = 0;
-                    flag2 = false;
-                    flag = true;
+                    isGameAimedWithMaxPoints = false;
+                    isNewGame = true;
                 }
             }
             while (command != "exit");
-            Console.WriteLine("Made in Bulgaria - Uauahahahahaha!");
-            Console.WriteLine("AREEEEEEeeeeeee.");
+
+            Console.WriteLine("Made in Bulgaria!");
+            Console.WriteLine("See you next time.");
             Console.Read();
         }
 
-        private static void Rating(List<Player> player)
+        private static void PrintRating(List<Player> player)
         {
             Console.WriteLine("\nResults: ");
             if (player.Count > 0)
             {
                 for (int i = 0; i < player.Count; i++)
                 {
-                    Console.WriteLine("{0}. {1} --> {2} points",
-                        i + 1, player[i].Name, player[i].Points);
+                    Console.WriteLine("{0}. {1} --> {2} points", i + 1, player[i].Name, player[i].Points);
                 }
 
                 Console.WriteLine();
             }
-
             else
             {
                 Console.WriteLine("Empty rating!\n");
@@ -210,35 +201,35 @@
 
         private static void PrintBoard(char[,] board)
         {
-            int rows = board.GetLength(0);
-            int cols = board.GetLength(1);
+            // int BoardRows = board.GetLength(0);
+            // int BoardColumns = board.GetLength(1);
             Console.WriteLine("\n    0 1 2 3 4 5 6 7 8 9");
             Console.WriteLine("   ---------------------");
 
-            for (int row = 0; row < rows; row++)
+            for (int row = 0; row < BoardRows; row++)
             {
                 Console.Write("{0} | ", row);
-                for (int col = 0; col < cols; col++)
+                for (int col = 0; col < BoardColumns; col++)
                 {
                     Console.Write("{0} ", board[row, col]);
                 }
+
                 Console.Write("|");
                 Console.WriteLine();
             }
+
             Console.WriteLine("   ---------------------\n");
         }
 
         private static char[,] InitializeGameBoard()
         {
-            int boardRows = 5;
-            int boardColumns = 10;
-            char[,] board = new char[boardRows, boardColumns];
+            char[,] board = new char[BoardRows, BoardColumns];
 
-            for (int row = 0; row < boardRows; row++)
+            for (int row = 0; row < BoardRows; row++)
             {
-                for (int col = 0; col < boardColumns; col++)
+                for (int col = 0; col < BoardColumns; col++)
                 {
-                    board[row, col] = '?';
+                    board[row, col] = DefaultHiddenFieldSymbol;
                 }
             }
 
@@ -247,15 +238,15 @@
 
         private static char[,] LoadBombs()
         {
-            int boardRows = 5;
-            int boardCols = 10;
-            char[,] board = new char[boardRows, boardCols];
+            // int BoardRows = 5;
+            // int BoardColumns = 10;
+            char[,] board = new char[BoardRows, BoardColumns];
 
-            for (int row = 0; row < boardRows; row++)
+            for (int row = 0; row < BoardRows; row++)
             {
-                for (int col = 0; col < boardCols; col++)
+                for (int col = 0; col < BoardColumns; col++)
                 {
-                    board[row, col] = '-';
+                    board[row, col] = NoBombSymbol;
                 }
             }
 
@@ -273,21 +264,20 @@
 
             foreach (int randNum in randNums)
             {
-                int col = (randNum / boardCols);
-                int row = (randNum % boardCols);
+                int col = randNum / BoardColumns;
+                int row = randNum % BoardColumns;
 
                 if (row == 0 && randNum != 0)
                 {
                     col--;
-                    row = boardCols;
+                    row = BoardColumns;
                 }
-
                 else
                 {
                     row++;
                 }
 
-                board[col, row - 1] = '*';
+                board[col, row - 1] = BombSymbol;
             }
 
             return board;
@@ -302,7 +292,7 @@
             {
                 for (int col = 0; col < rows; col++)
                 {
-                    if (board[row, col] != '*')
+                    if (board[row, col] != BombSymbol)
                     {
                         char pointsCount = CountPoints(board, row, col);
                         board[row, col] = pointsCount;
@@ -314,20 +304,20 @@
         private static char CountPoints(char[,] board, int currentRow, int currentCol)
         {
             int count = 0;
-            int rows = board.GetLength(0);
-            int cols = board.GetLength(1);
+            //int BoardRows = board.GetLength(0);
+            //int BoardColumns = board.GetLength(1);
 
             if (currentRow - 1 >= 0)
             {
-                if (board[currentRow - 1, currentCol] == '*')
+                if (board[currentRow - 1, currentCol] == BombSymbol)
                 {
                     count++;
                 }
             }
 
-            if (currentRow + 1 < rows)
+            if (currentRow + 1 < BoardRows)
             {
-                if (board[currentRow + 1, currentCol] == '*')
+                if (board[currentRow + 1, currentCol] == BombSymbol)
                 {
                     count++;
                 }
@@ -335,15 +325,15 @@
 
             if (currentCol - 1 >= 0)
             {
-                if (board[currentRow, currentCol - 1] == '*')
+                if (board[currentRow, currentCol - 1] == BombSymbol)
                 {
                     count++;
                 }
             }
 
-            if (currentCol + 1 < cols)
+            if (currentCol + 1 < BoardColumns)
             {
-                if (board[currentRow, currentCol + 1] == '*')
+                if (board[currentRow, currentCol + 1] == BombSymbol)
                 {
                     count++;
                 }
@@ -351,31 +341,31 @@
 
             if ((currentRow - 1 >= 0) && (currentCol - 1 >= 0))
             {
-                if (board[currentRow - 1, currentCol - 1] == '*')
+                if (board[currentRow - 1, currentCol - 1] == BombSymbol)
                 {
                     count++;
                 }
             }
 
-            if ((currentRow - 1 >= 0) && (currentCol + 1 < cols))
+            if ((currentRow - 1 >= 0) && (currentCol + 1 < BoardColumns))
             {
-                if (board[currentRow - 1, currentCol + 1] == '*')
+                if (board[currentRow - 1, currentCol + 1] == BombSymbol)
                 {
                     count++;
                 }
             }
 
-            if ((currentRow + 1 < rows) && (currentCol - 1 >= 0))
+            if ((currentRow + 1 < BoardRows) && (currentCol - 1 >= 0))
             {
-                if (board[currentRow + 1, currentCol - 1] == '*')
+                if (board[currentRow + 1, currentCol - 1] == BombSymbol)
                 {
                     count++;
                 }
             }
 
-            if ((currentRow + 1 < rows) && (currentCol + 1 < cols))
+            if ((currentRow + 1 < BoardRows) && (currentCol + 1 < BoardColumns))
             {
-                if (board[currentRow + 1, currentCol + 1] == '*')
+                if (board[currentRow + 1, currentCol + 1] == BombSymbol)
                 {
                     count++;
                 }

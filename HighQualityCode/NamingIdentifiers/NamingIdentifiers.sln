@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MakePerson", "2.MakePerso
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.checkIfBrowserIsMozilla", "3.checkIfBrowserIsMozilla\3.checkIfBrowserIsMozilla.csproj", "{05956353-2310-45F7-890F-BF7366963DF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Re-factorAndImproveTheCode", "4.Re-factorAndImproveTheCode\4.Re-factorAndImproveTheCode.csproj", "{BEFDFE27-5903-4D74-A9AD-60E30CF357AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Mines", "4.Re-factorAndImproveTheCode\4.Mines.csproj", "{BEFDFE27-5903-4D74-A9AD-60E30CF357AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

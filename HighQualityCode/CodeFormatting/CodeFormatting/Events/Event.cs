@@ -19,24 +19,24 @@
         public int CompareTo(object obj)
         {
             Event other = obj as Event;
-            int byDate = this.date.CompareTo(other.date);
-            int byTitle = this.title.CompareTo(other.title);
-            int byLocation = this.location.CompareTo(other.location);
+            int comparedByDate = this.date.CompareTo(other.date);
+            int comparedByTitle = this.title.CompareTo(other.title);
+            int comparedByLocation = this.location.CompareTo(other.location);
 
-            if (byDate == 0)
+            if (comparedByDate == 0)
             {
-                if (byTitle == 0)
+                if (comparedByTitle == 0)
                 {
-                    return byLocation;
+                    return comparedByLocation;
                 }
                 else
                 {
-                    return byTitle;
+                    return comparedByTitle;
                 }
             }
             else
             {
-                return byDate;
+                return comparedByDate;
             }
         }
 
