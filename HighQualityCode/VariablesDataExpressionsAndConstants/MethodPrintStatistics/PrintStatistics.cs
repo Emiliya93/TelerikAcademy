@@ -31,9 +31,10 @@
     }
 */
 
-using System;
-namespace PrintStatistics 
+namespace PrintStatistics
 {
+    using System;
+
     public class Printer 
     {
         public void PrintStatistics(double[] arr, int count)
