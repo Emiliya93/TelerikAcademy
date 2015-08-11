@@ -4,20 +4,22 @@
 
     public class Methods
     {
-        public static double CalcTriangleArea(double a, double b, double c)
+        public static double CalcTriangleArea(double firstSide, double secondSide, double thirdSide)
         {
-            if (a <= 0 || b <= 0 || c <= 0)
+            if (firstSide <= 0 || secondSide <= 0 || thirdSide <= 0)
             {
                 throw new ArgumentOutOfRangeException("Sides should be positive.");
             }
 
-            if (a + b < c || a + c < b || b + c < a)
+            if (firstSide + secondSide < thirdSide ||
+                firstSide + thirdSide < secondSide ||
+                secondSide + thirdSide < firstSide)
             {
                 throw new ArgumentOutOfRangeException("No side can be longer than the sum of the other two sides");
             }
 
-            double semiperimeter = (a + b + c) / 2;
-            double semiperimeterMinusSidesFormula = semiperimeter * (semiperimeter - a) * (semiperimeter - b) * (semiperimeter - c);
+            double semiperimeter = (firstSide + secondSide + thirdSide) / 2;
+            double semiperimeterMinusSidesFormula = semiperimeter * (semiperimeter - firstSide) * (semiperimeter - secondSide) * (semiperimeter - thirdSide);
             double area = Math.Sqrt(semiperimeterMinusSidesFormula);
             return area;
         }
