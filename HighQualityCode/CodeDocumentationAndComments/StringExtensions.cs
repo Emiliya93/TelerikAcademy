@@ -8,6 +8,9 @@
     using System.Text;
     using System.Text.RegularExpressions;
 
+    /// <summary>
+    /// Custom string extensions
+    /// </summary>
     public static class StringExtensions
     {
         /// <summary>
@@ -223,10 +226,10 @@
         }
 
         /// <summary>
-        /// A string extension method that returnes the specified characters count string from the original. 
+        /// A string extension method that returns the specified characters count string from the original. 
         /// </summary>
         /// <param name="input">The original string.</param>
-        /// <param name="charsCount">Count of characteres from the begining of the specified string to be returned as string.</param>
+        /// <param name="charsCount">Count of characters from the beginning of the specified string to be returned as string.</param>
         /// <returns>The new string extracted from the original with length <see cref="charsCount"/>.</returns>
         public static string GetFirstCharacters(this string input, int charsCount)
         {
@@ -234,7 +237,7 @@
         }
 
         /// <summary>
-        /// A string extension method that retirnes valid file extension of the specified string. If missing returns empty string.
+        /// A string extension method that returns valid file extension of the specified string. If missing returns empty string.
         /// </summary>
         /// <param name="fileName">The string with the file name and file extension.</param>
         /// <returns>The file extension or empty string if extension is not found.</returns>
@@ -255,10 +258,10 @@
         }
 
         /// <summary>
-        /// A string extension method that returnes the full content type of a file extension.
+        /// A string extension method that returns the full content type of a file extension.
         /// </summary>
-        /// <param name="fileExtension">The file extension to search equvalent content type for.</param>
-        /// <returns>The content type of the given file extension or default ("application/octet-stream") if there is not equvalent fount.</returns>
+        /// <param name="fileExtension">The file extension to search equivalent content type for.</param>
+        /// <returns>The content type of the given file extension or default ("application/octet-stream") if there is not equivalent fount.</returns>
         public static string ToContentType(this string fileExtension)
         {
             var fileExtensionToContentType = new Dictionary<string, string>

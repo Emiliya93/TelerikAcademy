@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="2f98f702-750d-46f2-9a51-2a09524d0582" Title="Telerik.ILS.Common" Url="html/8de58998-b109-a973-8160-c522a4d4fd7d.htm">
-    <HelpTOCNode Id="4ef72d7e-5bba-48f6-9b21-e3636a7c3c7c" Title="StringExtensions Class" Url="html/7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392.htm">
-      <HelpTOCNode Id="52beeac7-8188-4982-92b7-95b5d0e207e7" Title="StringExtensions Methods" Url="html/33375b05-5382-9b52-561a-5ea5698e4095.htm">
+  <HelpTOCNode Id="c2f47099-6e75-4b1f-8550-3800a59ff941" Title="Telerik.ILS.Common" Url="html/8de58998-b109-a973-8160-c522a4d4fd7d.htm">
+    <HelpTOCNode Id="f7a0295b-16bb-460b-8104-e2e8886d3da9" Title="StringExtensions Class" Url="html/7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392.htm">
+      <HelpTOCNode Id="dc10dde0-44b7-43b9-81c2-90d9ae359207" Title="StringExtensions Methods" Url="html/33375b05-5382-9b52-561a-5ea5698e4095.htm">
         <HelpTOCNode Title="CapitalizeFirstLetter Method " Url="html/f1b6b6cb-bf66-79dd-d265-fedbe6dc19fd.htm" />
         <HelpTOCNode Title="ConvertCyrillicToLatinLetters Method " Url="html/81306784-7715-471f-e35c-53862a2f2919.htm" />
         <HelpTOCNode Title="ConvertLatinToCyrillicKeyboard Method " Url="html/23a07d03-8656-21f2-ddb2-e939a23f6dc5.htm" />
