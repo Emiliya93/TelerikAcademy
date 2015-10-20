@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+  <album>
+    <name>
+      Kill 'Em All
+    </name>
+    <artist>
+      Metallica
+    </artist>
+    <year>
+      1983
+    </year>
+    <producer>
+      Metallica
+    </producer>
+    <price>
+      15
+    </price>
+    <songs>
+      <song>
+        <title>
+          Kill 'Em All
+        </title>
+        <duration>
+          4.2
+        </duration>
+      </song>
+      <song>
+        <title>
+          Hit The Lights
+        </title>
+        <duration>
+          4.17
+        </duration>
+      </song>
+    </songs>
+  </album>
+  
+    <album>
+      <name>
+        Kill 'Em All
+      </name>
+      <artist>
+        Metallica
+      </artist>
+      <year>
+        1983
+      </year>
+      <producer>
+        Metallica
+      </producer>
+      <price>
+        95
+      </price>
+      <songs>
+        <song>
+          <title>
+            Kill 'Em All
+          </title>
+          <duration>
+            4.2
+          </duration>
+        </song>
+        <song>
+          <title>
+            Hit The Lights
+          </title>
+          <duration>
+            4.17
+          </duration>
+        </song>
+      </songs>
+    </album>
+
+    <album>
+      <name>
+        Ride The Lightning
+      </name>
+      <artist>
+        Metallica
+      </artist>
+      <year>
+        1984
+      </year>
+      <producer>
+        Metallica
+      </producer>
+      <price>
+        100
+      </price>
+      <songs>
+        <song>
+          <title>
+            Fight Fire With Fire
+          </title>
+          <duration>
+            4.42
+          </duration>
+        </song>
+        <song>
+          <title>
+            Fade To Black
+          </title>
+          <duration>
+            6.57
+          </duration>
+        </song>
+      </songs>
+    </album>
+
+    <album>
+      <name>
+        And Justice For All
+      </name>
+      <artist>
+        Metallica
+      </artist>
+      <year>
+        1988
+      </year>
+      <producer>
+        Metallica
+      </producer>
+      <price>
+        220
+      </price>
+      <songs>
+        <song>
+          <title>
+            And Justice For All
+          </title>
+          <duration>
+            9.5
+          </duration>
+        </song>
+      </songs>
+    </album>
+
+    <album>
+      <name>
+        The Definitive Collection
+      </name>
+      <artist>
+        AC DC
+      </artist>
+      <year>
+        2010
+      </year>
+      <producer>
+        AC DC
+      </producer>
+      <price>
+        210
+      </price>
+      <songs>
+        <song>
+          <title>
+            Thunderstruck
+          </title>
+          <duration>
+            4.52
+          </duration>
+        </song>
+      </songs>
+    </album>
+</catalog>

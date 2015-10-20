@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students xmlns:students="urn:students">
+  <student>
+    <name>
+      Smiley Cuoco
+    </name>
+    <sex>
+      Female
+    </sex>
+    <birthDate>
+      20.09.1998
+    </birthDate>
+    <phone>
+      0896544321
+    </phone>
+    <email>
+      smiley@smiley.com
+    </email>
+    <course>
+      Databases
+    </course>
+    <specialty>
+      Web Development
+    </specialty>
+    <facultyNumber>
+      1000
+    </facultyNumber>
+    <exams>
+      <exam>
+        <name>
+          Javascript Applications
+        </name>
+        <tutor>
+          Doncho
+        </tutor>
+        <score>
+          62
+        </score>
+      </exam>
+      <exam>
+        <name>
+          High Quality Code
+        </name>
+        <tutor>
+          Nikolay
+        </tutor>
+        <score>
+          25
+        </score>
+      </exam>
+    </exams>
+  </student>
+
+  <student>
+    <name>
+      Steven Shmidt
+    </name>
+    <sex>
+      Male
+    </sex>
+    <birthDate>
+      10.10.1992
+    </birthDate>
+    <phone>
+      0896544311
+    </phone>
+    <email>
+      steven@steven.com
+    </email>
+    <course>
+      Databases
+    </course>
+    <specialty>
+      Web Development
+    </specialty>
+    <facultyNumber>
+      1001
+    </facultyNumber>
+    <exams>
+      <exam>
+        <name>
+          Javascript Applications
+        </name>
+        <tutor>
+          Doncho
+        </tutor>
+        <score>
+          62
+        </score>
+      </exam>
+      <exam>
+        <name>
+          High Quality Code
+        </name>
+        <tutor>
+          Nikolay
+        </tutor>
+        <score>
+          25
+        </score>
+      </exam>
+    </exams>
+  </student>
+
+<student>
+    <name>
+      Pesho Peshev
+    </name>
+    <sex>
+      Male
+    </sex>
+    <birthDate>
+      25.10.1992
+    </birthDate>
+    <phone>
+      0896544322
+    </phone>
+    <email>
+      pesho@pesho.com
+    </email>
+    <course>
+      Databases
+    </course>
+    <specialty>
+      Web Development
+    </specialty>
+    <facultyNumber>
+      1002
+    </facultyNumber>
+    <exams>
+      <exam>
+        <name>
+          Javascript Applications
+        </name>
+        <tutor>
+          Doncho
+        </tutor>
+        <score>
+          89
+        </score>
+      </exam>
+      <exam>
+        <name>
+          High Quality Code
+        </name>
+        <tutor>
+          Nikolay
+        </tutor>
+        <score>
+          38
+        </score>
+      </exam>
+    <exam>
+        <name>
+          High Quality Code
+        </name>
+        <tutor>
+          Ivaylo
+        </tutor>
+        <score>
+          95
+        </score>
+      </exam>
+    </exams>
+  </student>
+</students>

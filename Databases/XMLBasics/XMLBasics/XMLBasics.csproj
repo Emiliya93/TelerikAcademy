@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F68000B2-6BF2-4064-9CF3-7495A7D1A9A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>XMLBasics</RootNamespace>
+    <AssemblyName>XMLBasics</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\bootstrap\dist\css\bootstrap-theme.css" />
+    <Content Include="Libraries\bootstrap\dist\css\bootstrap-theme.min.css" />
+    <Content Include="Libraries\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Libraries\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Libraries\bootstrap\dist\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Libraries\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Libraries\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Libraries\bootstrap\dist\js\npm.js" />
+    <Content Include="Libraries\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Libraries\bootstrap\Gruntfile.js" />
+    <Content Include="Libraries\bootstrap\grunt\bs-commonjs-generator.js" />
+    <Content Include="Libraries\bootstrap\grunt\bs-glyphicons-data-generator.js" />
+    <Content Include="Libraries\bootstrap\grunt\bs-lessdoc-parser.js" />
+    <Content Include="Libraries\bootstrap\grunt\bs-raw-files-generator.js" />
+    <Content Include="Libraries\bootstrap\js\affix.js" />
+    <Content Include="Libraries\bootstrap\js\alert.js" />
+    <Content Include="Libraries\bootstrap\js\button.js" />
+    <Content Include="Libraries\bootstrap\js\carousel.js" />
+    <Content Include="Libraries\bootstrap\js\collapse.js" />
+    <Content Include="Libraries\bootstrap\js\dropdown.js" />
+    <Content Include="Libraries\bootstrap\js\modal.js" />
+    <Content Include="Libraries\bootstrap\js\popover.js" />
+    <Content Include="Libraries\bootstrap\js\scrollspy.js" />
+    <Content Include="Libraries\bootstrap\js\tab.js" />
+    <Content Include="Libraries\bootstrap\js\tooltip.js" />
+    <Content Include="Libraries\bootstrap\js\transition.js" />
+    <Content Include="Libraries\bootstrap\package.js" />
+    <Content Include="NamespacesInAnXmlDocument.txt" />
+    <Content Include="students.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="students.xsl">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XmlLanguage.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libraries\bootstrap\.bower.json" />
+    <None Include="Libraries\bootstrap\bower.json" />
+    <None Include="Libraries\bootstrap\dist\css\bootstrap-theme.css.map" />
+    <None Include="Libraries\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="Libraries\bootstrap\dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Libraries\bootstrap\dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Libraries\bootstrap\dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Libraries\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Libraries\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Libraries\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Libraries\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Libraries\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Libraries\bootstrap\grunt\.jshintrc" />
+    <None Include="Libraries\bootstrap\grunt\configBridge.json" />
+    <None Include="Libraries\bootstrap\grunt\sauce_browsers.yml" />
+    <None Include="Libraries\bootstrap\js\.jscsrc" />
+    <None Include="Libraries\bootstrap\js\.jshintrc" />
+    <None Include="Libraries\bootstrap\less\.csscomb.json" />
+    <None Include="Libraries\bootstrap\less\.csslintrc" />
+    <None Include="Libraries\bootstrap\less\alerts.less" />
+    <None Include="Libraries\bootstrap\less\badges.less" />
+    <None Include="Libraries\bootstrap\less\bootstrap.less" />
+    <None Include="Libraries\bootstrap\less\breadcrumbs.less" />
+    <None Include="Libraries\bootstrap\less\button-groups.less" />
+    <None Include="Libraries\bootstrap\less\buttons.less" />
+    <None Include="Libraries\bootstrap\less\carousel.less" />
+    <None Include="Libraries\bootstrap\less\close.less" />
+    <None Include="Libraries\bootstrap\less\code.less" />
+    <None Include="Libraries\bootstrap\less\component-animations.less" />
+    <None Include="Libraries\bootstrap\less\dropdowns.less" />
+    <None Include="Libraries\bootstrap\less\forms.less" />
+    <None Include="Libraries\bootstrap\less\glyphicons.less" />
+    <None Include="Libraries\bootstrap\less\grid.less" />
+    <None Include="Libraries\bootstrap\less\input-groups.less" />
+    <None Include="Libraries\bootstrap\less\jumbotron.less" />
+    <None Include="Libraries\bootstrap\less\labels.less" />
+    <None Include="Libraries\bootstrap\less\list-group.less" />
+    <None Include="Libraries\bootstrap\less\media.less" />
+    <None Include="Libraries\bootstrap\less\mixins.less" />
+    <None Include="Libraries\bootstrap\less\mixins\alerts.less" />
+    <None Include="Libraries\bootstrap\less\mixins\background-variant.less" />
+    <None Include="Libraries\bootstrap\less\mixins\border-radius.less" />
+    <None Include="Libraries\bootstrap\less\mixins\buttons.less" />
+    <None Include="Libraries\bootstrap\less\mixins\center-block.less" />
+    <None Include="Libraries\bootstrap\less\mixins\clearfix.less" />
+    <None Include="Libraries\bootstrap\less\mixins\forms.less" />
+    <None Include="Libraries\bootstrap\less\mixins\gradients.less" />
+    <None Include="Libraries\bootstrap\less\mixins\grid-framework.less" />
+    <None Include="Libraries\bootstrap\less\mixins\grid.less" />
+    <None Include="Libraries\bootstrap\less\mixins\hide-text.less" />
+    <None Include="Libraries\bootstrap\less\mixins\image.less" />
+    <None Include="Libraries\bootstrap\less\mixins\labels.less" />
+    <None Include="Libraries\bootstrap\less\mixins\list-group.less" />
+    <None Include="Libraries\bootstrap\less\mixins\nav-divider.less" />
+    <None Include="Libraries\bootstrap\less\mixins\nav-vertical-align.less" />
+    <None Include="Libraries\bootstrap\less\mixins\opacity.less" />
+    <None Include="Libraries\bootstrap\less\mixins\pagination.less" />
+    <None Include="Libraries\bootstrap\less\mixins\panels.less" />
+    <None Include="Libraries\bootstrap\less\mixins\progress-bar.less" />
+    <None Include="Libraries\bootstrap\less\mixins\reset-filter.less" />
+    <None Include="Libraries\bootstrap\less\mixins\reset-text.less" />
+    <None Include="Libraries\bootstrap\less\mixins\resize.less" />
+    <None Include="Libraries\bootstrap\less\mixins\responsive-visibility.less" />
+    <None Include="Libraries\bootstrap\less\mixins\size.less" />
+    <None Include="Libraries\bootstrap\less\mixins\tab-focus.less" />
+    <None Include="Libraries\bootstrap\less\mixins\table-row.less" />
+    <None Include="Libraries\bootstrap\less\mixins\text-emphasis.less" />
+    <None Include="Libraries\bootstrap\less\mixins\text-overflow.less" />
+    <None Include="Libraries\bootstrap\less\mixins\vendor-prefixes.less" />
+    <None Include="Libraries\bootstrap\less\modals.less" />
+    <None Include="Libraries\bootstrap\less\navbar.less" />
+    <None Include="Libraries\bootstrap\less\navs.less" />
+    <None Include="Libraries\bootstrap\less\normalize.less" />
+    <None Include="Libraries\bootstrap\less\pager.less" />
+    <None Include="Libraries\bootstrap\less\pagination.less" />
+    <None Include="Libraries\bootstrap\less\panels.less" />
+    <None Include="Libraries\bootstrap\less\popovers.less" />
+    <None Include="Libraries\bootstrap\less\print.less" />
+    <None Include="Libraries\bootstrap\less\progress-bars.less" />
+    <None Include="Libraries\bootstrap\less\responsive-embed.less" />
+    <None Include="Libraries\bootstrap\less\responsive-utilities.less" />
+    <None Include="Libraries\bootstrap\less\scaffolding.less" />
+    <None Include="Libraries\bootstrap\less\tables.less" />
+    <None Include="Libraries\bootstrap\less\theme.less" />
+    <None Include="Libraries\bootstrap\less\thumbnails.less" />
+    <None Include="Libraries\bootstrap\less\tooltip.less" />
+    <None Include="Libraries\bootstrap\less\type.less" />
+    <None Include="Libraries\bootstrap\less\utilities.less" />
+    <None Include="Libraries\bootstrap\less\variables.less" />
+    <None Include="Libraries\bootstrap\less\wells.less" />
+    <None Include="Libraries\bootstrap\LICENSE" />
+    <None Include="Libraries\bootstrap\package.json" />
+    <None Include="Libraries\bootstrap\README.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

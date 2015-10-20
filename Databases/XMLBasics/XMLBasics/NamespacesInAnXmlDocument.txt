@@ -1,0 +1,17 @@
+﻿XML namespaces associate element and attribute names in an XML document with custom and predefined URIs.
+
+To create these associations, you define prefixes for namespace URIs, and use those prefixes to qualify element and attribute names in XML data.
+
+Namespaces prevent element and attribute name collisions, and enable elements and attributes of the same name to be handled and validated differently.
+
+To declare a namespace on an element, you use the "xmlns:" attribute:
+
+xmlns:<name>=<"uri">
+
+where <name> is the namespace prefix and <"uri"> is the URI that identifies the namespace. After you declare the prefix, you can use it to qualify elements and attributes in an XML document and associate them with the namespace URI. Because the namespace prefix is used throughout a document, it should be short in length.
+
+To use the default namespace, omit the prefix and the colon from the declaration on the element:
+
+<BOOK xmlns="http://www.contoso.com/books.dtd">
+
+More information here: https://msdn.microsoft.com/en-us/library/d6730bwt(v=vs.110).aspx
