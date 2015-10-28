@@ -3,19 +3,15 @@
     using System;
     using System.Collections.Generic;
 
-    using Helpers.InputOutputUtils;
     using Helpers.InputParsers;
 
     public class Startup
     {
-        private static IMessageProcessor messageProcessor = new ConsoleMessageProcessor();
-        private static IParser sequenceReader = new SequenceOfNumbersParser();
-
         /// <summary>
         /// Write a program that reads from the console a sequence of positive integer numbers.
         /// The sequence ends when empty line is entered.
         /// Calculate and print the sum and average of the elements of the sequence.
-        /// Keep the sequence in List<int>.
+        /// Keep the sequence in List&lt;int&gt;.
         /// 
         /// My Examples:
         /// input       | output
@@ -23,10 +19,11 @@
         /// </summary>
         public static void Main()
         {
-            messageProcessor.PrintMessageOnLine("Enter sequence of integer numbers: ");
-            string input = messageProcessor.ReadMessageOnLine();
+            Console.WriteLine("Task 1");
+            Console.WriteLine("Enter sequence of integer numbers: ");
+            string input = Console.ReadLine();
 
-            List<int> numbers = sequenceReader.ReadIntegerNumbers(input);
+            List<int> numbers = SequenceParser.ParseIntegerNumbersToList(input);
 
             long sum = 0;
             foreach (int number in numbers)
@@ -36,7 +33,7 @@
 
             double average = sum / numbers.Count;
 
-            messageProcessor.PrintMessageOnLine(string.Format("Sum: {0}; Average: {1}", sum, average));
+            Console.WriteLine("Sum: {0}; Average: {1}", sum, average);
         }
     }
 }
