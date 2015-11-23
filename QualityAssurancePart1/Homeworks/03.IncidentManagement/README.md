@@ -36,7 +36,7 @@
 |Severity  |Medium|
 
 |BUG REPORT |   #2   |
-| ------------- |:-------------:| 
+| ------------- | --------------:| 
 |Description  |Application crash on clicking the Save button while creating a new user, hence unable to create a new user in the application.|
 |Steps to reproduce  ||
 |Acceptance criteria  ||
