@@ -30,7 +30,7 @@
 |BUG REPORT |   #1   |
 |------------- |:---------------| 
 |Description  |When there’s a page break in the page and you try to set dashed border on the page, the bottom border line doesn’t show|
-|Steps to reproduce  |<ol><li>Open the application</li><li>Enter some text to fill the first page.</li><li>Make sure that second page is automatically added and page break is inserted.</li><li>Go to borders and shading.</li><li>Choose page border.</li><li>Set dashed style.</li></ol><br/>Actual result: Bottom border is missing.<br/>Expected result: All borders of the page should be visible.|
+|Steps to reproduce  |<ol><li>Open the application</li><li>Enter some text to fill the first page.</li><li>Make sure that second page is automatically added and page break is inserted.</li><li>Go to borders and shading.</li><li>Choose page border.</li><li>Set dashed style.</li></ol>Actual result: Bottom border is missing.<br/>Expected result: All borders of the page should be visible.|
 |Acceptance criteria  |All borders should be visible|
 |Priority |Next Release|
 |Severity  |Medium|
@@ -38,7 +38,7 @@
 |BUG REPORT |   #2   |
 | ------------- |:--------------| 
 |Description  |Application crash on clicking the Save button while creating a new user, hence unable to create a new user in the application.|
-|Steps to reproduce  |<ol><li>Open the application.</li><li>Click Create new user.</li><li>Enter valid information.</li><li>Click Save button.</li></ol><br/>Actual result: Application crashes and the new user is not created.<br/>Expected result: New user is created and stored in application database.|
+|Steps to reproduce  |<ol><li>Open the application.</li><li>Click Create new user.</li><li>Enter valid information.</li><li>Click Save button.</li></ol>Actual result: Application crashes and the new user is not created.<br/>Expected result: New user is created and stored in application database.|
 |Acceptance criteria  |The application is able to create new users.|
 |Priority |Immediate|
 |Severity  |Blocking|
