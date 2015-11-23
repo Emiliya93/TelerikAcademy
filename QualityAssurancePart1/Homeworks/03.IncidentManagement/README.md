@@ -28,7 +28,7 @@
 *	Report the following bugs
 
 |BUG REPORT |   #1   |
-| ------------- |:-------------:| 
+| ------------- | --------------:| 
 |Description  |When there’s a page break in the page and you try to set dashed border on the page, the bottom border line doesn’t show|
 |Steps to reproduce  |<ol><li>Open the application</li><li>Enter some text to fill the first page.</li><li>Make sure that second page is automatically added and page break is inserted.</li><li>Go to borders and shading.</li>Choose page border.</li>Set dashed style.</li><li>Actual result: Bottom border is missing.</li><li>Expected result: All borders of the page should be visible.</li>|
 |Acceptance criteria  |All borders should be visible|
