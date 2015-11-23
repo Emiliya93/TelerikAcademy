@@ -9,19 +9,19 @@
 |2 – Critical				|2 – Next Release|
 |3 – High					|3 – On Occasion|
 |4 – Medium					|4 – Open (not planned for now)|
-|5 – Low|
+|5 – Low||
 
 | Bug description        | Severity           | Priority  |
 | ------------- |:-------------:| -----:|
-|Tool for selection doesn’t select exactly the same that it’s marking (crops 10 pixels to the left)      |  |  |
-| When selecting a color with the color picker it replaces the first color from the palette, not the chosen one     |   |  |
-| Shortcut for “Create New Image” (Ctrl+N) doesn’t work |   |   |
-| Spelling mistake in menu Select “Transperent selection” instead of “Transparent selection”|   |   |
-| While holding Ctrl+Z and drawing with the pencil the second color is used instead of the first one, and that’s not a feature|   |   |
-| When using “Magic Wand” tool the tolerance value is changing on every mouse click|   |   |
-| While clicking “Rotate 90 Clockwise” the image is rotating in counterclockwise direction|   |   |
-| The button for increasing the Brush size doesn’t work. It can be increased only from the drop down |   |   |
-| Program crash on clicking the OK button while resizing an image.|   |   
+|Tool for selection doesn’t select exactly the same that it’s marking (crops 10 pixels to the left)      |  *Critical*| *Immediate* |
+| When selecting a color with the color picker it replaces the first color from the palette, not the chosen one     |*High*   |*Next Release*  |
+| Shortcut for “Create New Image” (Ctrl+N) doesn’t work |*Low*   |  *Next Release* |
+| Spelling mistake in menu Select “Transperent selection” instead of “Transparent selection”|   *Low*|   *Immediate*|
+| While holding Ctrl+Z and drawing with the pencil the second color is used instead of the first one, and that’s not a feature|  *Critical* | *Open*  |
+| When using “Magic Wand” tool the tolerance value is changing on every mouse click|   *Low*| *Immediate*  |
+| While clicking “Rotate 90 Clockwise” the image is rotating in counterclockwise direction|  *Critical* | *Open*  |
+| The button for increasing the Brush size doesn’t work. It can be increased only from the drop down |  *High* | *Immediate*  |
+| Program crash on clicking the OK button while resizing an image.| *Blocking*  | *Immediate* |   
 
 2.Imagine you have the following bug, mentioned by a customer and you have to describe it and log it in the bug tracking tool you use
 *	Report the following bugs
@@ -29,10 +29,10 @@
 |BUG REPORT |   #1   |
 | ------------- |:-------------:| 
 |Description  |When there’s a page break in the page and you try to set dashed border on the page, the bottom border line doesn’t show|
-|Steps to reproduce  ||
+|Steps to reproduce  |1.Open the application<br/>2.Enter some text to fill the first page.<br/>3.Make sure that second page is automatically added and page break is inserted.<br/>4.Go to borders and shading.<br/>5.Choose page border.<br/>6.Set dashed style.<br/>Actual result: Bottom border is missing.<br/>Expected result: All borders of the page should be visible.|
 |Acceptance criteria  |All borders should be visible|
-|Priority ||
-|Severity  ||
+|Priority |Next Release|
+|Severity  |Medium|
 
 |BUG REPORT |   #2   |
 | ------------- |:-------------:| 
