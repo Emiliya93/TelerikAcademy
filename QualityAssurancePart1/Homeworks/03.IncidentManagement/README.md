@@ -3,8 +3,9 @@
 
 1.We have a painting program like Paint.NET and we have the following bugs
 *	Set Priority and Severity
+
 | Severity types			| Priority types	|
-| ------------------------- |:----------:|
+| ------------------------- | -----------:|
 |1 – Blocking				|1 – Immediate|
 |2 – Critical				|2 – Next Release|
 |3 – High					|3 – On Occasion|
@@ -29,7 +30,7 @@
 |BUG REPORT |   #1   |
 | ------------- |:-------------:| 
 |Description  |When there’s a page break in the page and you try to set dashed border on the page, the bottom border line doesn’t show|
-|Steps to reproduce  |1.Open the application<br/>2.Enter some text to fill the first page.<br/>3.Make sure that second page is automatically added and page break is inserted.<br/>4.Go to borders and shading.<br/>5.Choose page border.<br/>6.Set dashed style.<br/>Actual result: Bottom border is missing.<br/>Expected result: All borders of the page should be visible.|
+|Steps to reproduce  |<ol><li>Open the application</li><li>Enter some text to fill the first page.</li><li>Make sure that second page is automatically added and page break is inserted.</li><li>Go to borders and shading.</li>Choose page border.</li>Set dashed style.</li><li>Actual result: Bottom border is missing.</li><li>Expected result: All borders of the page should be visible.</li>|
 |Acceptance criteria  |All borders should be visible|
 |Priority |Next Release|
 |Severity  |Medium|
