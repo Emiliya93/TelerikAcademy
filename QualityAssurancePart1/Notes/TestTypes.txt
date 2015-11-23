@@ -1,0 +1,24 @@
+***QA
+***Test Types
+
+- Risk-Based Testing
+
+
+- Functional Testing
+	-Tests input-output behavior;
+	-Black box testing
+	-Test basis - functional 	requirements
+	-What the system must be 	able to do
+
+- Non-functional Testing
+	-Is it easy to use, comfortable and effective
+	-Reliability, Usability, Efficiency
+
+- Structural Testing
+
+- Testing related to changes
+ -- Re-testing 
+
+ -- Regression Testing
+
+- Maintenance Testing

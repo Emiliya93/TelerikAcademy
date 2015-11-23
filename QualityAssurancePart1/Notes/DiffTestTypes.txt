@@ -1,0 +1,4 @@
+Difference
+* Re-Testing(Confirmation) - when bug is fixed test if other stuff is broken(check for side effects)
+
+* Regression - when bug is fixed, when new functionality is added and test if the old ones are still working; using automatisation testing, test whole product, usually before release

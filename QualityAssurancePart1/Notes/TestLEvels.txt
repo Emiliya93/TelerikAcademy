@@ -1,0 +1,16 @@
+***QA
+***Test Levels
+
+*Component Testing(applicable white box testing)
+- the most count of tests
+
+*Integration(white box)
+- Connection between modules
+
+* System (UI)
+- Different tests on diff environment!
+- 
+
+* Acceptance
+- Involves client
+ - users acceptance test(UAT) - on client like environment

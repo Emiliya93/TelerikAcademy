@@ -1,0 +1,12 @@
+Severity
+1 – Blocking
+2 – Critical
+3 – High
+4 – Medium
+5 – Low
+
+Priority
+1 – Immediate
+2 – Next Release
+3 – On Occasion
+4 – Open (not planned for now)

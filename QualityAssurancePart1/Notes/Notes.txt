@@ -1,0 +1,15 @@
+***QA
+***Notes
+
+*ISTQB foundation level certified
+(International Software Testing Qualifications Board)
+
+*exit criteria - when to stop testing something (for example we have under 50 defects and fixed them-then stop)
+
+*enter/entry criteria - environment for concrete testing (for example for load testing you need specific environment)
+
+*Kogato imame mnogo kombinacii koito da testvame trqbva da napravim ocenka na riska - koi kombinacii sa nai veroqtni da grumnat
+
+* fixed defect results in braking working another part of the software
+
+
