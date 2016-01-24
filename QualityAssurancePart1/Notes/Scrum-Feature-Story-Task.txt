@@ -1,0 +1,5 @@
+Scrum
+
+Feature (epic story - 2-3 months) -
+has stories - 
+have tasks

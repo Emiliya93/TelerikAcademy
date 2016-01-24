@@ -1,0 +1,37 @@
+EXAM
+* Bug Report
+- Environment
+- Possible workaround
+- Actual and Expected result
+- Acceptance criteria is not needed
+- Attachments 
+
+
+* Test Studio Problem 
+
+- Check if exists and Delete repo before test steps
+
+- More waits
+
+- Data bind
+
+- Test steps not in one test - extract several tests(Login, CreateRepository, CreateNewBranch..)
+
+* Web Driver
+- XPath - use relative(some secure element and go in previuos elements to find the needed)
+
+- Use class with the exact info you need
+
+- When using navigation, wait for some element you know its gonna pop out, to be sure that the page is ready for screenshot
+
+- Extract methods in some shared place(for example method TakeScreenshot in class BaseTest)
+
+- Add extension - addblock
+
+- Maximize page
+
+- Dont navigate to the needed page with many clicks, whenm you need to test the *exact* page
+
+- On the end of the test dispose the driver
+
+- to the method TakeScreenshot in the path set the extension 

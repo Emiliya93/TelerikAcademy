@@ -1,0 +1,9 @@
+QA Notes from test in ISTQB
+* A test case tests a test condition (can be verified by one or more test cases)
+
+* Test case specification specifies the inputs and outputs
+
+* A developer makes a mistake which causes a defect that may be seen as
+a failure during dynamic testing
+
+* The level of decision coverage is detemined by taking the number of decision outcomes you have tested and dividing that by the total number of decision outcomes in the module

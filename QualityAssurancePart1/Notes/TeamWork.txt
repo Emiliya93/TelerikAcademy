@@ -7,3 +7,9 @@ Quality Attributes for domain testing
 
 Teamwork friday (27.11.15)
 choose test case management system
+
+Teamwork friday (27.11.15)
+Test Plan for Telerik Academy System 
+
+Teamwork friday (04.12.15)
+Provide test cases for Telerik Academy System 
