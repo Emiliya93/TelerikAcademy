@@ -1,0 +1,8 @@
+* Informal review
+- code review
+- peer
+- test
+
+* Inspection - formal review
+- Lead by moderator
+- Used to find bugs

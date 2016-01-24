@@ -1,0 +1,96 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_uimap.sikuli</h2> <a href="_uimap.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">########################################################</span>
+<span class="cmt"># UI map for XYZ</span>
+<span class="cmt">########################################################</span>
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="cmt">########################################################</span>
+
+<span class="kw">class</span> TAP:
+    button_CreateApp = <img src="button_CreateApp.png" />
+    button_DoCreateApp = <img src="button_DoCreateApp.png" />
+    label_AppName = Pattern(<img src="label_AppName.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">30</span>)
+    label_Code = <img src="label_Code.png" />
+    label_Application = <img src="label_Application.png" />
+    button_Ok = <img src="button_Ok.png" />
+
+<span class="kw">class</span> Apps:
+    label_Account = <img src="1452612598834.png" />
+    box_Project = <img src="box_Project.png" />
+    button_Delete = <img src="button_Delete.png" />
+    label_DeleteMessage = <img src="label_DeleteMessage.png" />
+    checkbox_AcceptDeletion = <img src="checkbox_AcceptDeletion.png" />
+    button_Delete = <img src="button_Delete.png" />
+</pre>
+</body>
+</html>

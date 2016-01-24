@@ -1,0 +1,16 @@
+***Mobile Testing
+* Заемат доста място, като се съберат повече:
+D:\Users\Emi\AppData\Local\Temp\AndroidEmulator
+
+* Android SDK Manager:
+да добавим един Android SDK Build-tools - без значение кой
+
+* Стъпки:
+0. JAVA SDK
+1. Android SDK
+2. Create Emulator
+3. VS / Eclipse
+4. NodeJs
+5. npm install -g appium@1.3.4
+
+* Use Android UI Automation Viewer to inspect the UI

@@ -1,0 +1,17 @@
+
+        //private void SelectOptionByPartialText(HtmlSelect select, string partialText)
+        //{
+        //    select.MouseClick();
+        //    select.SelectByPartialText(partialText, true);
+            
+        //    var option = select.SelectedOption;
+        //    var index = select.SelectedIndex;
+
+        //    select.SelectByIndex(index);
+        //}
+
+        //private void SelectListItem(HtmlUnorderedList list, string partialText)
+        //{
+        //    var itemToSelect = list.Find.ByExpression<HtmlListItem>(partialText.TextContentContaining());
+        //    itemToSelect.Click();
+        //}

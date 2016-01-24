@@ -1,0 +1,5 @@
+TTF process
+vstest.discoveryengine
+
+for WPF tests
+download Snoop 
