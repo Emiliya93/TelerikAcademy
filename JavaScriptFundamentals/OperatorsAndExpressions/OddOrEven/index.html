@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Operators and expressions</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script src="scripts.js"></script>
+
+    <section>
+        <h1>Problem 1. Odd or Even</h1>
+        <p>
+            Write an expression that checks if given integer is odd or even.
+        </p>
+        <input id="oddOrEvenInput" type="text" placeholder="Enter value here" />
+        <button onclick="oddOrEven()">Is Odd?</button>
+    </section>
+
+    <section>
+        <h1>Problem 2. Divisible by 7 and 5</h1>
+        <p>
+            Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
+        </p>
+        <input id="divisibleInput" type="text" placeholder="Enter value here" />
+        <button onclick="divisibleBy5And7()">Divided by 7 and 5?</button>
+    </section>
+
+    <section>
+        <h1>Problem 3. Rectangle area</h1>
+        <p>
+            Write an expression that calculates rectangle’s area by given width and height.
+        </p>
+        <input id="rectangleWidth" type="text" placeholder="Enter rectangle's width here" />
+        <input id="rectangleHeight" type="text" placeholder="Enter rectangle's height here" />
+        <button onclick="rectangleArea()">Calculate area</button>
+        <input id="rectangleArea" type="text" disabled />
+    </section>
+
+    <section>
+        <h1>Problem 4. Third digit</h1>
+        <p>
+            Write an expression that checks for given integer if its third digit (right-to-left) is 7.
+        </p>
+        <input id="thirdDigitInput" type="text" placeholder="Enter value here" />
+        <button onclick="isThirdDigitSeven()">Third digit 7?</button>
+    </section>
+
+    <section>
+        <h1>Problem 5. Third bit</h1>
+        <p>
+            Write a boolean expression for finding if the bit #3 (counting from 0) of a given integer.
+            The bits are counted from right to left, starting from bit #0.
+            The result of the expression should be either 1 or 0.
+        </p>
+        <input id="thirdBitInput" type="text" placeholder="Enter value here" />
+        <button onclick="extractThirdBit()">Bit #3</button>
+    </section>
+
+    <section>
+        <h1>Problem 6. Point in Circle</h1>
+        <p>
+            Write an expression that checks if given point P(x, y) is within a circle K({0,0}, 5). //{0,0} is the centre and 5 is the radius
+        </p>
+        <input id="pointX" type="text" placeholder="Enter X coordinate of a point" />
+        <input id="pointY" type="text" placeholder="Enter Y coordinate of a point" />
+        <button onclick="isInCircle()">Check if point is in circle</button>
+        <input id="isInside" type="text" disabled />
+    </section>
+
+    <section>
+        <h1>Problem 7. Is prime</h1>
+        <p>
+            Write an expression that checks if given positive integer number n (n ≤ 100) is prime.
+        </p>
+        <input id="isPrimeInput" type="text" placeholder="Enter value here" />
+        <button onclick="checkIfPrime()">Is Prime?</button>
+    </section>
+
+    <section>
+        <h1>Problem 8. Trapezoid area</h1>
+        <p>
+            Write an expression that calculates trapezoid's area by given sides a and b and height h.
+        </p>
+        <input id="sideA" type="text" placeholder="Enter trapezoid's side A" />
+        <input id="sideB" type="text" placeholder="Enter trapezoid's side B" />
+        <input id="height" type="text" placeholder="Enter height" />
+        <button onclick="trapezoidArea()">Calculate area</button>
+        <input id="trapezoidArea" type="text" disabled />
+    </section>
+
+    <section>
+        <h1>Problem 9. Point in Circle and outside Rectangle</h1>
+        <p>
+            Write an expression that checks for given point P(x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).
+        </p>
+        <input id="pointXTask9" type="text" placeholder="Enter X coordinate of a point" />
+        <input id="pointYTask9" type="text" placeholder="Enter Y coordinate of a point" />
+        <button onclick="InCircleOutRectangle()">inside K & outside of R?</button>
+        <input id="isInKAndOutR" type="text" disabled />
+    </section>
+</body>
+</html>
